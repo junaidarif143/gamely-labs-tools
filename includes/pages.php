@@ -730,6 +730,217 @@ HTML;
 	);
 
 	/* ---------------------------------------------------------------
+	 * Gravel calculator
+	 * ------------------------------------------------------------- */
+	$gravel_faq = array(
+		'How much does a cubic yard of gravel weigh?'          => 'Clean crushed stone typically weighs about 2,700 to 2,800 pounds per cubic yard, roughly 1.35 to 1.4 tons, according to aggregate supplier Select Sand & Gravel. Crusher run or road base, which contains stone dust, weighs more, up to about 1.5 tons. Weight varies with the type of rock and its moisture.',
+		'How do I convert cubic yards of gravel to tons?'      => 'Multiply cubic yards by the stone’s weight in tons per cubic yard. For crushed stone at about 1.4 tons per yard, 3 cubic yards is about 4.2 tons. Ask your supplier for their own figure if you are buying by weight.',
+		'How many bags of gravel are in a cubic yard?'         => 'A cubic yard is 27 cubic feet, so it equals 54 bags of 0.5 cubic feet or 36 bags of 0.75 cubic feet. For more than a yard or so, bulk delivery is usually much cheaper than bags.',
+		'How deep should gravel be for a walkway?'             => 'Two to three inches of surface gravel is common for a walkway or patio, over a firm, well-drained base. Driveways need much more: several inches of base stone under the surface layer.',
+		'Should I order extra gravel?'                         => 'For compacted stone such as a driveway base, order about 5 to 10% extra to allow for compaction and minor variations. Loose decorative stone needs little or no extra.',
+	);
+	$gravel_content = <<<'HTML'
+<p class="gl-lede">Work out how much gravel or crushed stone you need in cubic yards, tons and bags. Add your paths, patios or driveway, choose the stone and depth, and compare buying by the ton, by the yard or in bags.</p>
+
+[gl_gravel]
+
+<h2>How to use this calculator</h2>
+<ol>
+<li><strong>Add each area</strong> as a rectangle, a circle or a known number of square feet.</li>
+<li><strong>Choose the type of stone.</strong> Each has a typical weight; pick "My supplier’s figure" to enter the exact tons per cubic yard from your supplier.</li>
+<li><strong>Choose the depth</strong> and whether to add extra for compaction.</li>
+<li><strong>Optional: enter prices</strong> per ton, per yard or per bag to see which is cheapest.</li>
+</ol>
+
+<h2>The formulas</h2>
+<ul>
+<li><strong>Cubic feet</strong> = area (sq ft) × depth (in) ÷ 12, plus any compaction allowance</li>
+<li><strong>Cubic yards</strong> = cubic feet ÷ 27</li>
+<li><strong>Tons</strong> = cubic yards × tons per cubic yard</li>
+<li><strong>Bags</strong> = cubic feet ÷ bag size, rounded up</li>
+</ul>
+
+<h2>Worked example</h2>
+<p>A garden path 30 feet long and 3 feet wide, covered with 3 inches of crushed stone, plus 5% for compaction:</p>
+<ul>
+<li>Area: 30 × 3 = <strong>90 sq ft</strong></li>
+<li>Volume: 90 × 3 ÷ 12 = 22.5 cu ft, plus 5% = <strong>23.6 cubic feet</strong>, about <strong>0.88 cubic yards</strong></li>
+<li>Weight at 1.4 tons per yard: 0.88 × 1.4 ≈ <strong>1.2 tons</strong></li>
+<li>In 0.5-cubic-foot bags: 23.6 ÷ 0.5 = 47.3, so <strong>48 bags</strong>. At this size, a 1-ton or 1-yard bulk delivery is usually cheaper.</li>
+</ul>
+
+<h2>Typical stone weights</h2>
+<table class="gl-table">
+<thead><tr><th>Material</th><th>Typical tons per cubic yard</th></tr></thead>
+<tbody>
+<tr><td>Clean crushed stone (#57, #67)</td><td>About 1.35 – 1.4</td></tr>
+<tr><td>Crusher run / road base (with fines)</td><td>About 1.4 – 1.5</td></tr>
+<tr><td>Lava rock</td><td>About 0.65 – 0.9</td></tr>
+</tbody>
+</table>
+<p>Crushed stone and road base figures are from aggregate supplier Select Sand & Gravel; lava rock is far lighter because it is porous. For pea gravel and river rock, the calculator starts from the crushed-stone figure. Denser rock such as basalt weighs more than limestone, and wet stone weighs more than dry, so if you are buying by the ton, ask your supplier for their tons-per-yard figure.</p>
+
+<h2>Choosing a depth</h2>
+<ul>
+<li><strong>Decorative top layer over fabric or an existing base:</strong> about 2 inches.</li>
+<li><strong>Walkways and patio surfaces:</strong> 2 to 3 inches over firm, well-drained soil or a compacted base.</li>
+<li><strong>Driveways:</strong> a deeper, compacted base of larger crushed stone or road base, topped with a few inches of surface stone. Build it in layers and compact each one.</li>
+</ul>
+<p>Laying pavers rather than loose gravel? Use our <a href="/paver-base-calculator/">paver base calculator</a>, which adds bedding sand and widens the base past the edges.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://selectsg.com/how-much-does-a-yard-of-crushed-stone-weigh/" rel="noopener" target="_blank">Select Sand & Gravel: How much does a yard of crushed stone weigh?</a></li>
+<li><a href="https://selectsg.com/how-much-does-a-yard-of-road-base-weigh/" rel="noopener" target="_blank">Select Sand & Gravel: How much does a yard of road base weigh?</a></li>
+</ul>
+HTML;
+	$defs['gravel'] = array(
+		'title'   => 'Gravel Calculator',
+		'slug'    => 'gravel-calculator',
+		'excerpt' => 'How much gravel or crushed stone you need in cubic yards, tons and bags, with cost by the ton, yard or bag.',
+		'content' => $gravel_content . "\n" . gl_tools_faq_html( $gravel_faq ),
+		'faq'     => $gravel_faq,
+		'order'   => 10,
+	);
+
+	/* ---------------------------------------------------------------
+	 * Topsoil calculator
+	 * ------------------------------------------------------------- */
+	$topsoil_faq = array(
+		'How much topsoil do I need to level my lawn?'           => 'Measure each low area and its average depth, then multiply area by depth in inches and divide by 12 for cubic feet. A 10 by 6 foot dip that is 1½ inches deep needs 7.5 cubic feet, spread in three passes of no more than ½ inch each.',
+		'How thick can I topdress a lawn at one time?'           => 'Clemson Cooperative Extension recommends no more than ½ inch of material at a time. Thicker layers can smother and stunt the grass. Let the grass grow up through each layer before adding more.',
+		'Should I use sand or topsoil to level a lawn?'          => 'Match the material to your existing soil. Clemson Extension advises using sand only if your native soil is sandy; otherwise use a topsoil similar to what you have. Layers of very different materials can interfere with water movement.',
+		'How deep should topsoil be for a new lawn?'             => 'The University of Nebraska–Lincoln recommends at least 4 inches of topsoil under a new lawn from sod, and Iowa State suggests 4 to 6 inches of good topsoil when seeding.',
+		'How many bags of topsoil are in a cubic yard?'          => 'A cubic yard is 27 cubic feet: 36 bags of 0.75 cubic feet or 27 bags of 1 cubic foot. Above a cubic yard, bulk topsoil is usually far cheaper.',
+	);
+	$topsoil_content = <<<'HTML'
+<p class="gl-lede">Find out how much topsoil you need to level low spots in your lawn, put down a base for a new lawn, or fill and raise an area. For lawn leveling, the calculator also splits the job into safe, thin passes so the grass survives.</p>
+
+[gl_topsoil]
+
+<h2>How to use this calculator</h2>
+<ol>
+<li><strong>Choose the job.</strong> Leveling low spots, a topsoil layer for a new lawn, or filling an area. Each sets a starting depth you can change.</li>
+<li><strong>Add the areas.</strong> For lawn dips, measure each low spot and estimate its average depth with a straightedge and ruler.</li>
+<li><strong>Pick a bag size</strong> and, optionally, enter bag and bulk prices.</li>
+</ol>
+
+<h2>The formulas</h2>
+<ul>
+<li><strong>Cubic feet</strong> = area (sq ft) × depth (in) ÷ 12</li>
+<li><strong>Cubic yards</strong> = cubic feet ÷ 27</li>
+<li><strong>Leveling passes</strong> = depth ÷ ½ inch, rounded up</li>
+</ul>
+
+<h2>Worked example: leveling a dip</h2>
+<p>A low spot about 10 feet by 6 feet, averaging 1½ inches deep:</p>
+<ul>
+<li>Volume: 10 × 6 × 1.5 ÷ 12 = <strong>7.5 cubic feet</strong></li>
+<li>Passes: 1.5 ÷ 0.5 = <strong>3 passes</strong> of about 2.5 cubic feet each</li>
+<li>In 0.75-cubic-foot bags: <strong>10 bags</strong> in total, about 4 per pass</li>
+</ul>
+
+<h2>Leveling a lawn the right way</h2>
+<p>Clemson Cooperative Extension recommends "light and frequent" topdressing, with no more than ½ inch applied at a time; heavier layers can stunt the grass or shade it out. Rake the soil so it sifts down between the grass blades, and let the grass grow up through it before the next pass. Topdress while the lawn is actively growing.</p>
+<ul>
+<li><strong>Match your soil.</strong> Use sand only if your native soil is sandy. On other soils, use a screened topsoil similar to what you have.</li>
+<li><strong>Check what you buy.</strong> Topsoil and river sand can carry weed seeds, and nutrient levels vary, so buy from a reputable supplier and consider testing it.</li>
+<li><strong>For deep dips,</strong> many people cut and lift the sod, fill underneath with soil, firm it, and lay the sod back down rather than making many thin passes.</li>
+</ul>
+
+<h2>Topsoil for a new lawn</h2>
+<p>A new lawn needs enough good soil for deep roots. The University of Nebraska–Lincoln recommends at least 4 inches of topsoil before laying sod, and Iowa State University suggests 4 to 6 inches of good topsoil when seeding. See our guides to <a href="/how-to-lay-sod/">laying sod</a> and <a href="/how-to-overseed-lawn/">overseeding</a>.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://hgic.clemson.edu/factsheet/topdressing-a-home-lawn/" rel="noopener" target="_blank">Clemson Cooperative Extension: Topdressing a home lawn</a></li>
+<li><a href="https://turf.unl.edu/sites/unl.edu.ianr.agronomy-horticulture.turf/files/media/file/Establishing-lawn-fromsod2012m.pdf" rel="noopener" target="_blank">University of Nebraska–Lincoln: Establishing lawns from sod</a></li>
+<li><a href="https://yardandgarden.extension.iastate.edu/how-to/late-summer-and-fall-lawn-care" rel="noopener" target="_blank">Iowa State University Extension: Late summer and fall lawn care</a></li>
+</ul>
+HTML;
+	$defs['topsoil'] = array(
+		'title'   => 'Topsoil Calculator',
+		'slug'    => 'topsoil-calculator',
+		'excerpt' => 'Topsoil for leveling lawn low spots in safe ½-inch passes, new lawns or filling areas, in cubic yards and bags.',
+		'content' => $topsoil_content . "\n" . gl_tools_faq_html( $topsoil_faq ),
+		'faq'     => $topsoil_faq,
+		'order'   => 11,
+	);
+
+	/* ---------------------------------------------------------------
+	 * Paver base calculator
+	 * ------------------------------------------------------------- */
+	$paver_faq = array(
+		'How deep should the base be for pavers?'          => 'Unilock’s guideline is 4 to 6 inches of compacted base for pedestrian walkways and patios, and 8 to 12 inches for driveways. Poorly drained or clay soils and colder climates generally call for the deeper end.',
+		'How much wider than the pavers should the base be?' => 'Unilock recommends extending the base beyond the paver edge by the same distance as the base depth. For a 6-inch base, extend it 6 inches past the edge on every side.',
+		'How thick should bedding sand be under pavers?'   => 'About 1 inch of bedding sand is typical, screeded smooth over the compacted base. Don’t use the sand to fix low spots in the base; level the base itself.',
+		'How deep do I need to dig for a paver patio?'     => 'Add the base depth, the bedding sand and the paver thickness. For 6 inches of base, 1 inch of sand and 2⅜-inch pavers, dig about 9⅜ inches below the finished surface.',
+		'How do I compact a paver base?'                   => 'Spread and compact the base in layers. Unilock notes that typical plate compactors only compact about 3 to 4 inches at a time, so a 6-inch base needs at least two layers.',
+	);
+	$paver_content = <<<'HTML'
+<p class="gl-lede">Plan the base for a paver patio, walkway or driveway. Enter the paved area and the calculator works out base gravel, bedding sand and how much soil to dig out, with the base widened past the edges the way manufacturers recommend.</p>
+
+[gl_paver_base]
+
+<h2>How to use this calculator</h2>
+<ol>
+<li><strong>Choose the project type</strong> and base depth. Patios and walkways need less base than driveways.</li>
+<li><strong>Set the bedding sand depth and paver thickness.</strong> About 1 inch of sand and 2⅜-inch (60 mm) pavers are common.</li>
+<li><strong>Add the paved area</strong> as rectangles or circles at its finished size. The calculator adds the extra base width itself.</li>
+</ol>
+
+<h2>Base depth guidelines</h2>
+<table class="gl-table">
+<thead><tr><th>Project</th><th>Compacted base</th></tr></thead>
+<tbody>
+<tr><td>Walkway or patio</td><td>4 – 6 in</td></tr>
+<tr><td>Driveway</td><td>8 – 12 in</td></tr>
+</tbody>
+</table>
+<p>These are Unilock’s guidelines. Choose the deeper end on clay or poorly drained soil, and in climates with hard freezes. Unilock also recommends extending the base past the paver edge by the base depth, so a 6-inch base runs 6 inches beyond the pavers on every side, and compacting it in layers of 3 to 4 inches.</p>
+
+<h2>The formulas</h2>
+<ul>
+<li><strong>Base footprint</strong> = (length + 2 × base depth) × (width + 2 × base depth)</li>
+<li><strong>Base gravel</strong> = base footprint × base depth ÷ 12, plus 5–10% for compaction</li>
+<li><strong>Bedding sand</strong> = paved area × sand depth ÷ 12</li>
+<li><strong>Dig depth</strong> = base depth + sand depth + paver thickness</li>
+</ul>
+
+<h2>Worked example</h2>
+<p>A 16 × 12 foot patio with a 6-inch base, 1 inch of bedding sand and 2⅜-inch pavers:</p>
+<ul>
+<li>Base footprint: (16 + 1) × (12 + 1) = <strong>221 sq ft</strong></li>
+<li>Base gravel: 221 × 6 ÷ 12 = 110.5 cu ft, plus 10% = <strong>121.6 cubic feet</strong>, about <strong>4.5 cubic yards</strong> or <strong>6.3 tons</strong> at 1.4 tons per yard</li>
+<li>Bedding sand: 192 × 1 ÷ 12 = <strong>16 cubic feet</strong>, about 0.6 cubic yards</li>
+<li>Dig depth: 6 + 1 + 2⅜ = <strong>9⅜ inches</strong>, removing about <strong>6.4 cubic yards</strong> of soil</li>
+<li>Compaction: the 6-inch base goes down in <strong>2 layers</strong></li>
+</ul>
+
+<h2>Tips for a base that lasts</h2>
+<ul>
+<li><strong>Use a dense-graded base</strong> such as crushed stone with fines (often sold as road base or crusher run), which compacts firmly. See our <a href="/gravel-calculator/">gravel calculator</a> for stone weights.</li>
+<li><strong>Slope for drainage.</strong> Unilock suggests 1 to 2%, which is about ½ inch of fall over 4 feet at 1%. Slope away from the house.</li>
+<li><strong>Compact the soil first,</strong> then each layer of base, wetting it lightly if it is dry.</li>
+<li><strong>Screed the sand, don’t compact it,</strong> before laying pavers, then compact the pavers and sweep in joint sand.</li>
+</ul>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://unilock.com/diy/dos-and-donts-of-paver-installation-base-preparation-23/" rel="noopener" target="_blank">Unilock: Do’s and don’ts of paver installation, base preparation</a></li>
+<li><a href="https://selectsg.com/how-much-does-a-yard-of-road-base-weigh/" rel="noopener" target="_blank">Select Sand & Gravel: How much does a yard of road base weigh?</a></li>
+</ul>
+HTML;
+	$defs['paver_base'] = array(
+		'title'   => 'Paver Base Calculator',
+		'slug'    => 'paver-base-calculator',
+		'excerpt' => 'Base gravel, bedding sand and digging depth for paver patios, walkways and driveways.',
+		'content' => $paver_content . "\n" . gl_tools_faq_html( $paver_faq ),
+		'faq'     => $paver_faq,
+		'order'   => 12,
+	);
+
+	/* ---------------------------------------------------------------
 	 * About
 	 * ------------------------------------------------------------- */
 	$about = <<<'HTML'

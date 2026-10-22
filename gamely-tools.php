@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Gamely Labs Tools
  * Description:       Lawn, garden and yard calculators for Gamely Labs. Each tool is a shortcode; on activation or upgrade the plugin creates the tool pages and the homepage.
- * Version:           1.5.1
+ * Version:           1.6.0
  * Update URI:        false
  * Requires at least: 6.0
  * Requires PHP:      7.4
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'GL_TOOLS_VERSION', '1.5.1' );
+define( 'GL_TOOLS_VERSION', '1.6.0' );
 define( 'GL_TOOLS_AUTHOR', 'Junaid Arif' );
 define( 'GL_TOOLS_OWNER', 'AJ Tech Studio' );
 define( 'GL_TOOLS_EMAIL', 'info@ajtechstudio.com' );
@@ -42,6 +42,9 @@ function gl_tools_catalog() {
 		'grass_seed' => array( 'title' => 'Grass Seed Calculator', 'short' => 'Grass Seed', 'slug' => 'grass-seed-calculator', 'cat' => 'lawn', 'icon' => 'seed', 'tint' => '#F6ECCB', 'ink' => '#7A5A12', 'blurb' => 'Pounds of seed by grass type for a new lawn or overseeding, with bags and the best time to sow.', 'cta' => 'Open calculator', 'svg' => '<path d="M12 21c0-6 0-9-4-13"/><path d="M12 21c0-5 1-8 5-11"/><ellipse cx="7" cy="6" rx="2.2" ry="3.2" transform="rotate(-30 7 6)"/><ellipse cx="18" cy="8" rx="2.2" ry="3.2" transform="rotate(35 18 8)"/>' ),
 		'compost'    => array( 'title' => 'Compost Calculator', 'short' => 'Compost', 'slug' => 'compost-calculator', 'cat' => 'garden', 'icon' => 'compost', 'tint' => '#EADFCF', 'ink' => '#6B4A2F', 'blurb' => 'Cubic feet, yards and bags for new beds, top-ups and lawn topdressing, at extension-recommended depths.', 'cta' => 'Open calculator', 'svg' => '<path d="M4 9h16l-1.5 11h-13z"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/><path d="M9 14l2 2 4-4"/>' ),
 		'mulch'      => array( 'title' => 'Mulch Calculator', 'short' => 'Mulch', 'slug' => 'mulch-calculator', 'cat' => 'garden', 'icon' => 'mulch', 'tint' => '#F1E4D3', 'ink' => '#8A5E3B', 'blurb' => 'Bags or yards for every bed and tree ring at once, with top-up depth and bagged vs bulk cost.', 'cta' => 'Open calculator', 'svg' => '<path d="M3 19h18"/><path d="M5 19c1-4 3-6 7-6s6 2 7 6"/><path d="M9 13l1-2M13 13l1-3M16 14l1.5-1.5"/>' ),
+		'gravel'     => array( 'title' => 'Gravel Calculator', 'short' => 'Gravel', 'slug' => 'gravel-calculator', 'cat' => 'yard', 'icon' => 'gravel', 'tint' => '#E6E2DA', 'ink' => '#55524B', 'blurb' => 'Tons, cubic yards and bags of stone for paths, patios and driveways, with by-the-ton vs by-the-yard cost.', 'cta' => 'Open calculator', 'svg' => '<circle cx="6" cy="16" r="2.5"/><circle cx="12.5" cy="17" r="3"/><circle cx="18.5" cy="15.5" r="2.5"/><circle cx="9" cy="10.5" r="2.2"/><circle cx="15.5" cy="10" r="2.2"/>' ),
+		'topsoil'    => array( 'title' => 'Topsoil Calculator', 'short' => 'Topsoil', 'slug' => 'topsoil-calculator', 'cat' => 'yard', 'icon' => 'topsoil', 'tint' => '#EADFCF', 'ink' => '#6B4A2F', 'blurb' => 'Topsoil for leveling lawn low spots in safe ½-inch passes, new lawns or filling areas, in yards and bags.', 'cta' => 'Open calculator', 'svg' => '<path d="M3 18h18"/><path d="M3 14c3-2 5-2 8 0s6 2 10 0"/><path d="M12 4v6M9 7l3 3 3-3"/>' ),
+		'paver_base' => array( 'title' => 'Paver Base Calculator', 'short' => 'Paver Base', 'slug' => 'paver-base-calculator', 'cat' => 'yard', 'icon' => 'paver', 'tint' => '#E1E7EC', 'ink' => '#3F5566', 'blurb' => 'Base gravel, bedding sand and digging depth for patios, walkways and driveways, with the base widened past the edges.', 'cta' => 'Open calculator', 'svg' => '<rect x="3" y="4" width="8" height="5" rx="1"/><rect x="13" y="4" width="8" height="5" rx="1"/><rect x="7" y="11" width="10" height="5" rx="1"/><path d="M3 20h18"/>' ),
 	);
 }
 
@@ -49,7 +52,7 @@ function gl_tools_catalog() {
  * Tools announced as coming soon (shown by the theme).
  */
 function gl_tools_coming_soon() {
-	return array( 'Gravel & stone', 'Topsoil for leveling', 'Paver base', 'Garden planting calendar' );
+	return array( 'Retaining wall blocks', 'Fence materials', 'Garden planting calendar' );
 }
 
 /**
@@ -66,6 +69,9 @@ function gl_tools_registry() {
 		'gl_compost'     => array( 'script' => 'gl-compost', 'file' => 'assets/compost.js', 'deps' => array( 'gl-common' ) ),
 		'gl_sod'         => array( 'script' => 'gl-sod', 'file' => 'assets/sod.js', 'deps' => array( 'gl-common' ) ),
 		'gl_grass_seed'  => array( 'script' => 'gl-grass-seed', 'file' => 'assets/grass-seed.js', 'deps' => array( 'gl-common' ) ),
+		'gl_gravel'      => array( 'script' => 'gl-gravel', 'file' => 'assets/gravel.js', 'deps' => array( 'gl-common' ) ),
+		'gl_topsoil'     => array( 'script' => 'gl-topsoil', 'file' => 'assets/topsoil.js', 'deps' => array( 'gl-common' ) ),
+		'gl_paver_base'  => array( 'script' => 'gl-paver-base', 'file' => 'assets/paver-base.js', 'deps' => array( 'gl-common' ) ),
 	);
 }
 
