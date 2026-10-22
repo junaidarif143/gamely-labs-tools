@@ -1,0 +1,394 @@
+/* Gamely Labs Tools: calculator styles, matched to the Gamely theme.
+   Everything is scoped under .gl-* so it also works on other themes. */
+
+:root {
+	--gl-forest: #2F4A2C;
+	--gl-forest-ink: #22361F;
+	--gl-forest-hover: #1E3320;
+	--gl-moss-soft: #EEF3E6;
+	--gl-marigold: #F2C14E;
+	--gl-ink: #2A2620;
+	--gl-muted: #6E6556;
+	--gl-line: #E4DAC6;
+	--gl-line-2: #D3C6AC;
+	--gl-surface: #FFFDF7;
+	--gl-panel: #F7F2E8;
+	--gl-on-forest: #D9E2CF;
+	--gl-warn: #7A4B00;
+	--gl-warn-soft: #FFF1D2;
+	--gl-display: "Fraunces", Georgia, serif;
+}
+
+/* ---------- Calculator card ---------- */
+.gl-tool {
+	color: var(--gl-ink);
+	background: var(--gl-surface);
+	border: 1px solid var(--gl-line);
+	border-radius: 24px;
+	padding: 28px;
+	margin: 8px 0 40px;
+	box-shadow: 0 1px 0 var(--gl-line), 0 12px 30px rgba(74, 58, 32, 0.06);
+	font-size: 16px;
+	line-height: 1.5;
+}
+.gl-tool * { box-sizing: border-box; }
+.gl-tool h3 {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--gl-ink);
+	margin: 0 0 14px;
+	letter-spacing: 0;
+	line-height: 1.3;
+}
+.gl-step { padding: 22px 0; border-top: 1px solid #EDE4D2; }
+.gl-step:first-child { border-top: 0; padding-top: 0; }
+.gl-step-num {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex: none;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background: var(--gl-forest);
+	color: #FFFDF7;
+	font-size: 14px;
+	font-weight: 700;
+	margin-right: 0;
+}
+.gl-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 14px 16px;
+}
+.gl-field label {
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 6px;
+	color: var(--gl-ink);
+}
+.gl-field .gl-hint {
+	display: block;
+	font-size: 13px;
+	color: var(--gl-muted);
+	margin-top: 5px;
+	line-height: 1.35;
+}
+.gl-tool input[type="number"],
+.gl-tool input[type="text"],
+.gl-tool select {
+	width: 100%;
+	min-height: 48px;
+	padding: 10px 14px;
+	font: inherit;
+	font-size: 16px; /* prevents zoom on iPhone */
+	font-weight: 500;
+	color: var(--gl-ink);
+	background: #FFFFFF;
+	border: 1.5px solid var(--gl-line-2);
+	border-radius: 12px;
+	transition: border-color .15s ease, box-shadow .15s ease;
+}
+.gl-tool select {
+	appearance: none;
+	-webkit-appearance: none;
+	padding-right: 38px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%232F4A2C' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 12px center;
+}
+.gl-tool input:hover,
+.gl-tool select:hover { border-color: #B9A98A; }
+.gl-tool input:focus,
+.gl-tool select:focus {
+	outline: none;
+	border-color: var(--gl-forest);
+	box-shadow: 0 0 0 3px rgba(47, 74, 44, 0.18);
+}
+.gl-tool button:focus-visible,
+.gl-cell:focus-visible {
+	outline: 3px solid var(--gl-marigold);
+	outline-offset: 2px;
+}
+
+/* Buttons */
+.gl-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	min-height: 46px;
+	padding: 10px 18px;
+	font: inherit;
+	font-size: 15px;
+	font-weight: 700;
+	color: #FFFDF7;
+	background: var(--gl-forest);
+	border: 1.5px solid var(--gl-forest);
+	border-radius: 12px;
+	cursor: pointer;
+	transition: background-color .15s ease, transform .15s ease;
+}
+.gl-btn:hover { background: var(--gl-forest-hover); transform: translateY(-1px); }
+a.gl-btn, a.gl-btn:hover { color: #FFFDF7; text-decoration: none; }
+.gl-btn.gl-ghost { color: var(--gl-forest); background: transparent; border: 1.5px dashed #B9A98A; }
+.gl-btn.gl-ghost:hover { background: var(--gl-panel); }
+.gl-btn.gl-small { min-height: 42px; padding: 8px 16px; font-size: 14.5px; }
+.gl-link-btn {
+	background: none;
+	border: 0;
+	padding: 6px 4px;
+	color: #9B3B2C;
+	font: inherit;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+.gl-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+
+/* Zone / bed / area cards */
+.gl-item {
+	background: var(--gl-panel);
+	border: 1px solid var(--gl-line);
+	border-radius: 16px;
+	padding: 16px;
+	margin-bottom: 12px;
+}
+.gl-item-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 12px;
+}
+.gl-tool .gl-item-head input[type="text"] {
+	min-height: 40px;
+	font-weight: 700;
+	font-size: 16px;
+	border: 1.5px solid transparent;
+	background: transparent;
+	padding: 6px 8px;
+	border-radius: 10px;
+	min-width: 0;
+	flex: 1;
+}
+.gl-tool .gl-item-head input[type="text"]:hover,
+.gl-tool .gl-item-head input[type="text"]:focus { border-color: var(--gl-line-2); background: #fff; }
+
+/* ---------- Results panel ---------- */
+.gl-results {
+	margin-top: 22px;
+	background: var(--gl-forest);
+	color: var(--gl-on-forest);
+	border-radius: 20px;
+	padding: 24px;
+}
+.gl-results h3 {
+	font-family: var(--gl-display);
+	font-weight: 600;
+	font-size: 24px;
+	color: #FFFDF7;
+	margin-bottom: 16px;
+}
+.gl-results p { color: var(--gl-on-forest); }
+.gl-results strong { color: #FFFDF7; }
+.gl-results label { color: #FFFDF7; }
+.gl-results summary { color: #FFFDF7; cursor: pointer; font-weight: 600; }
+.gl-stats {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 12px;
+	margin-bottom: 16px;
+}
+.gl-stat {
+	background: rgba(255, 253, 247, 0.08);
+	border: 1px solid rgba(255, 253, 247, 0.08);
+	border-radius: 14px;
+	padding: 14px 16px;
+}
+.gl-stat b {
+	display: block;
+	font-family: var(--gl-display);
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.15;
+	color: var(--gl-marigold);
+	font-variant-numeric: tabular-nums;
+}
+.gl-stat b.gl-stat-text { font-family: inherit; font-size: 18px; font-weight: 700; line-height: 1.35; color: #FFFDF7; }
+.gl-stat span { display: block; margin-top: 2px; font-size: 14px; color: var(--gl-on-forest); }
+.gl-table-wrap { overflow-x: auto; border-radius: 14px; }
+.gl-tool table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 15px;
+	font-variant-numeric: tabular-nums;
+	background: var(--gl-surface);
+	color: var(--gl-ink);
+	border-radius: 14px;
+	overflow: hidden;
+}
+.gl-tool th,
+.gl-tool td {
+	text-align: left;
+	padding: 11px 14px;
+	border-bottom: 1px solid #EDE4D2;
+	vertical-align: top;
+}
+.gl-tool th {
+	font-size: 12.5px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--gl-muted);
+	background: #F3EDE0;
+}
+.gl-tool tbody tr:last-child td { border-bottom: 0; }
+.gl-tool td strong { color: var(--gl-forest-ink); }
+.gl-tool td small { color: var(--gl-muted); }
+.gl-results .gl-btn { background: var(--gl-marigold); border-color: var(--gl-marigold); color: var(--gl-ink); }
+.gl-results .gl-btn:hover { background: #E8B33A; }
+.gl-results .gl-btn.gl-ghost { background: transparent; border: 1.5px solid rgba(255, 253, 247, 0.4); color: #FFFDF7; }
+.gl-results .gl-btn.gl-ghost:hover { background: rgba(255, 253, 247, 0.1); }
+.gl-results .gl-field label { color: #FFFDF7; }
+.gl-note { font-size: 14px; color: var(--gl-muted); margin: 12px 0 0; line-height: 1.5; }
+.gl-results .gl-note { color: var(--gl-on-forest); }
+.gl-warn {
+	font-size: 14.5px;
+	line-height: 1.5;
+	color: var(--gl-warn);
+	background: var(--gl-warn-soft);
+	border-radius: 12px;
+	padding: 10px 14px;
+	margin: 12px 0 0;
+}
+.gl-results p.gl-warn { color: var(--gl-warn); }
+.gl-sr {
+	position: absolute !important;
+	width: 1px; height: 1px;
+	overflow: hidden; clip: rect(0 0 0 0);
+	white-space: nowrap;
+}
+
+/* ---------- Square foot garden planner ---------- */
+.gl-palette {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	max-height: 250px;
+	overflow-y: auto;
+	padding: 2px;
+}
+.gl-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	min-height: 42px;
+	padding: 8px 13px;
+	font: inherit;
+	font-size: 14.5px;
+	font-weight: 500;
+	background: #fff;
+	border: 1.5px solid var(--gl-line-2);
+	border-radius: 999px;
+	cursor: pointer;
+	color: var(--gl-ink);
+}
+.gl-chip:hover { border-color: #B9A98A; }
+.gl-chip .gl-dot { width: 12px; height: 12px; border-radius: 50%; flex: none; }
+.gl-chip small { color: var(--gl-muted); }
+.gl-chip[aria-pressed="true"] {
+	border-color: var(--gl-forest);
+	background: var(--gl-moss-soft);
+	box-shadow: 0 0 0 1.5px var(--gl-forest) inset;
+	font-weight: 700;
+}
+.gl-chip.gl-eraser[aria-pressed="true"] { box-shadow: 0 0 0 1.5px #9B3B2C inset; border-color: #9B3B2C; background: #FBEDEA; }
+.gl-bed-grid {
+	display: grid;
+	gap: 3px;
+	background: #6B4A2F;
+	padding: 6px;
+	border-radius: 10px;
+	width: max-content;
+	max-width: 100%;
+	overflow-x: auto;
+}
+.gl-cell {
+	width: 54px;
+	height: 54px;
+	border: 0;
+	border-radius: 5px;
+	background: #3D2C1C;
+	background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+	background-size: 6px 6px;
+	color: #fff;
+	font: inherit;
+	font-size: 11px;
+	line-height: 1.15;
+	padding: 3px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+}
+.gl-cell * { pointer-events: none; }
+.gl-cell b { font-size: 15px; line-height: 1; }
+.gl-cell span { display: block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gl-cell:hover { filter: brightness(1.15); }
+
+@media (max-width: 560px) {
+	.gl-tool { padding: 18px 16px; border-radius: 20px; margin-left: -4px; margin-right: -4px; }
+	.gl-results { padding: 18px 16px; margin-left: -6px; margin-right: -6px; }
+	.gl-stat b { font-size: 26px; }
+	.gl-cell { width: 40px; height: 40px; font-size: 9.5px; }
+	.gl-cell b { font-size: 13px; }
+	.gl-actions .gl-btn { flex: 1 1 auto; }
+}
+
+/* ---------- Page content helpers (used inside guides) ---------- */
+.gl-lede { font-size: 1.12em; }
+.gl-faq details {
+	border: 1px solid var(--gl-line);
+	border-radius: 14px;
+	padding: 14px 18px;
+	margin-bottom: 10px;
+	background: var(--gl-surface);
+}
+.gl-faq summary { cursor: pointer; font-weight: 700; }
+.gl-faq details p { margin: 10px 0 0; }
+.gl-table { margin: 16px 0; width: 100%; border-collapse: collapse; }
+.gl-table th, .gl-table td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--gl-line); vertical-align: top; }
+
+/* Legacy homepage cards (used if the Gamely theme is not active) */
+.gl-hero { padding: 8px 0 12px; }
+.gl-eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-size: 13px; font-weight: 700; color: var(--gl-forest); margin: 0 0 8px; }
+.gl-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 24px 0 36px; }
+.gl-card { display: flex; flex-direction: column; gap: 6px; padding: 18px; border: 1px solid var(--gl-line); border-radius: 16px; background: #fff; text-decoration: none !important; color: var(--gl-ink) !important; }
+.gl-card:hover { border-color: var(--gl-forest); }
+.gl-card strong { font-size: 1.1rem; }
+.gl-card span:last-child { color: var(--gl-muted); font-size: 15px; }
+.gl-card-tag { align-self: flex-start; font-size: 12px; font-weight: 700; color: var(--gl-forest-ink); background: var(--gl-moss-soft); padding: 2px 8px; border-radius: 999px; }
+.gl-soon { columns: 2; column-gap: 32px; }
+@media (max-width: 560px) { .gl-soon { columns: 1; } }
+
+/* ---------- Print: only the tool's results and plan ---------- */
+@media print {
+	body.gl-printing * { visibility: hidden; }
+	body.gl-printing .gl-print-area,
+	body.gl-printing .gl-print-area * { visibility: visible; }
+	body.gl-printing .gl-print-area { position: absolute; left: 0; top: 0; width: 100%; background: #fff; color: #000; }
+	body.gl-printing .gl-results h3, body.gl-printing .gl-stat b, body.gl-printing .gl-stat span, body.gl-printing .gl-results p { color: #000; }
+	.gl-noprint { display: none !important; }
+	.gl-cell, .gl-bed-grid { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
