@@ -27,6 +27,7 @@ function gl_tools_page_definitions() {
 		'What is cycle and soak?'                                     => 'Cycle and soak splits one long watering into two or more shorter runs with a 30 to 60 minute break between them. The break lets water sink in before the next run, so less of it runs off. It matters most on clay soil, slopes and fast spray heads.',
 		'What time of day should I water my lawn?'                    => 'Early morning, roughly between 4 and 10 a.m., is generally best. Wind is usually calmer and less water evaporates, and the grass dries during the day, which lowers the risk of fungal disease compared with watering in the evening.',
 		'How do I do a catch-cup test?'                               => 'Place 6 to 8 straight-sided containers such as tuna cans or rain gauges around one zone, run that zone for 15 minutes, measure the water depth in each container and average them. Multiply the average depth in inches by 4 to get the zone\'s precipitation rate in inches per hour.',
+		'How much water does a lawn need per week?'                  => 'A common guideline is about 1 inch a week, rain included, for an actively growing lawn: more in hot, dry or windy weather and on sandy soil, less in spring and fall. The calculator suggests a weekly target for your grass and season, which you can change.',
 	);
 
 	$sprinkler_content = <<<'HTML'
@@ -98,7 +99,7 @@ HTML;
 	$defs['sprinkler'] = array(
 		'title'   => 'Sprinkler Run Time Calculator',
 		'slug'    => 'sprinkler-run-time-calculator',
-		'excerpt' => 'Work out how many minutes to run each sprinkler zone, with rain, soil type and cycle-and-soak built in.',
+		'excerpt' => 'How long to run sprinklers for 1 inch of water: minutes per zone for spray heads and rotors, with rainfall, soil type and cycle-and-soak built in.',
 		'content' => $sprinkler_content . "\n" . gl_tools_faq_html( $sprinkler_faq ),
 		'faq'     => $sprinkler_faq,
 		'order'   => 1,
@@ -112,7 +113,7 @@ HTML;
 		'How deep should a square foot garden bed be?'          => 'Six inches of good soil mix is the standard depth for square foot gardening and suits most vegetables. Deep-rooted crops such as long carrots and potatoes do better with 10 to 12 inches.',
 		'What soil do you use for square foot gardening?'       => 'The classic mix is one third blended compost, one third peat moss (or coconut coir) and one third coarse vermiculite, measured by volume. Using compost from several sources gives a wider range of nutrients.',
 		'How wide should a square foot garden bed be?'          => 'Keep beds no wider than 4 feet if you can reach from both sides, or about 3 feet if the bed is against a wall or fence. That way you can reach every square without stepping on the soil.',
-		'How much soil do I need for a 4x8 raised bed?'         => 'A 4 by 8 foot bed filled 6 inches deep needs 16 cubic feet of soil, which is about 0.59 cubic yards. At 12 inches deep it needs 32 cubic feet, or about 1.19 cubic yards.',
+		'How many plants fit in a 4x8 square foot garden?'       => 'A 4 by 8 foot bed has 32 squares. Depending on what you grow, that is anywhere from 32 large plants such as tomatoes or peppers at 1 per square, to several hundred carrots or radishes at 16 per square. Most mixed plans fall in between; click squares in the planner to get your exact count.',
 	);
 
 	$sfg_content = <<<'HTML'
@@ -154,6 +155,7 @@ HTML;
 <li><strong>Cubic yards</strong> = cubic feet ÷ 27</li>
 </ul>
 <p><strong>Example:</strong> a 4 × 8 foot bed filled 6 inches deep needs 4 × 8 × 6 ÷ 12 = <strong>16 cubic feet</strong>, about 0.59 cubic yards. For the classic one-third mix, that is about 5.3 cubic feet each of compost, peat moss or coir, and vermiculite.</p>
+<p>Filling the bed with a different recipe, such as topsoil and compost? Use our <a href="/raised-bed-soil-calculator/">raised bed soil calculator</a>, which handles several beds and compares bagged and bulk prices.</p>
 <p>Peat moss and coir are often sold compressed and expand when you loosen them, so check the bag for its loose volume before buying. Bagged products are usually sold in 1, 1.5 or 2 cubic foot bags. For large beds, buying compost in bulk by the cubic yard is usually cheaper.</p>
 
 <h2>Tips for a productive square foot garden</h2>
@@ -168,7 +170,7 @@ HTML;
 	$defs['sfg'] = array(
 		'title'   => 'Square Foot Garden Planner',
 		'slug'    => 'square-foot-garden-planner',
-		'excerpt' => 'Plan raised beds square by square, with plant counts, a shopping list and the exact soil mix you need.',
+		'excerpt' => 'Plan a square foot garden: plants per square, a 4x4 or 4x8 bed layout, a printable shopping list and exactly how much of the classic ⅓ soil mix to buy.',
 		'content' => $sfg_content . "\n" . gl_tools_faq_html( $sfg_faq ),
 		'faq'     => $sfg_faq,
 		'order'   => 2,
@@ -237,7 +239,8 @@ HTML;
 		'How many bags of soil fill a raised bed?'                    => 'Divide the bed\'s volume in cubic feet by the bag size. A 4 by 8 by 1 foot bed holds 32 cubic feet, which is 16 bags of 2 cubic feet or about 22 bags of 1.5 cubic feet, before any allowance for settling.',
 		'Is it cheaper to buy raised bed soil in bags or in bulk?'     => 'For more than about one cubic yard (27 cubic feet), bulk soil delivered by the yard is usually cheaper per cubic foot than bags, though delivery fees can change the math for small orders. Enter both prices in the calculator to compare them for your project.',
 		'What can I use to fill the bottom of a deep raised bed?'     => 'Many gardeners fill the bottom of beds deeper than about 12 inches with untreated logs, branches or coarse wood, then top them with soil. Most vegetables root mainly in the top 12 inches, so this saves soil. Enter the filler depth in the calculator and it subtracts that volume.',
-		'What is the best soil mix for raised beds?'                  => 'A simple, reliable mix is equal parts screened topsoil and compost. Square foot gardeners often use one third compost, one third peat moss or coir, and one third vermiculite. Bagged raised-bed mixes are convenient for small beds.',
+		'How much soil do I need for a 4x4 raised bed?'               => 'A 4 by 4 foot bed needs 8 cubic feet of soil at 6 inches deep and 16 cubic feet (about 0.6 cubic yards) at 12 inches deep. That is 8 bags of 2 cubic feet for a 12-inch bed, plus about 10% for settling.',
+		'How many raised beds will a cubic yard of soil fill?'        => 'A cubic yard is 27 cubic feet. That fills one 4 by 8 foot bed about 10 inches deep, or a little more than one and a half 4 by 4 foot beds at 12 inches deep.',
 	);
 
 	$rb_content = <<<'HTML'
@@ -279,7 +282,7 @@ HTML;
 <tr><td>Bagged raised bed mix</td><td>A ready-made product</td><td>Small beds and container-style beds</td></tr>
 </tbody>
 </table>
-<p>Whatever you choose, avoid filling beds with plain native clay or with compost alone. Pure compost shrinks a lot as it breaks down, and heavy clay drains poorly in a bed.</p>
+<p>Not sure which recipe to pick? Our guide <a href="/raised-bed-soil-mixes/">comparing raised bed soil mixes</a> weighs cost, drainage and upkeep. Whatever you choose, avoid filling beds with plain native clay or with compost alone. Pure compost shrinks a lot as it breaks down, and heavy clay drains poorly in a bed.</p>
 
 <h2>Bags versus bulk</h2>
 <p>One cubic yard is 27 cubic feet, the same as 13.5 bags of 2 cubic feet or 18 bags of 1.5 cubic feet. Garden centers and landscape suppliers sell soil and compost by the yard, and for bigger projects the price per cubic foot is usually lower than bags. Small loads may carry a delivery fee, so compare the totals, not just the unit price. The calculator shows both side by side once you enter your local prices.</p>
@@ -295,7 +298,7 @@ HTML;
 	$defs['raised_bed'] = array(
 		'title'   => 'Raised Bed Soil Calculator',
 		'slug'    => 'raised-bed-soil-calculator',
-		'excerpt' => 'Soil volume, bag counts and bagged vs bulk cost for one or many raised beds.',
+		'excerpt' => 'How much soil do I need for a raised bed? Cubic feet, cubic yards and bags for 4x4, 4x8 or any size bed, with bagged vs bulk cost compared.',
 		'content' => $rb_content . "\n" . gl_tools_faq_html( $rb_faq ),
 		'faq'     => $rb_faq,
 		'order'   => 3,
@@ -310,6 +313,7 @@ HTML;
 		'How much nitrogen should I apply at one time?'                 => 'Extension guides commonly cap quick-release (water-soluble) nitrogen at about 1 pound per 1,000 square feet per application, and Virginia Tech recommends no more than 0.9 pound. Slow-release products can be applied at somewhat higher rates following the label.',
 		'How many times a year should I fertilize my lawn?'             => 'It depends on your grass. UConn Extension suggests about 2 pounds of nitrogen per 1,000 square feet a year for cool-season lawns when clippings are left on the lawn, often split between late spring and early fall. Warm-season grasses are fed while they are actively growing in late spring and summer; centipede and zoysia need less than Bermuda or St. Augustine.',
 		'When is the best time to fertilize a cool-season lawn?'        => 'Late spring and early fall are the main windows for fescue, bluegrass and ryegrass. Fall feeding is especially valuable because it helps the grass recover from summer and store energy for spring.',
+		'How much 10-10-10 fertilizer do I need per 1,000 square feet?' => 'To apply 1 pound of nitrogen per 1,000 square feet, use 1 ÷ 0.10 = 10 pounds of 10-10-10. A 50-pound bag at that rate covers about 5,000 square feet.',
 	);
 
 	$fert_content = <<<'HTML'
@@ -374,7 +378,7 @@ HTML;
 	$defs['fertilizer'] = array(
 		'title'   => 'Lawn Fertilizer Calculator',
 		'slug'    => 'lawn-fertilizer-calculator',
-		'excerpt' => 'Pounds of product and bags for any N-P-K fertilizer, with a yearly plan by grass type.',
+		'excerpt' => 'How much fertilizer per 1,000 sq ft for any N-P-K, like 10-10-10 or 32-0-4: pounds of product, bags to buy and a yearly feeding plan by grass type.',
 		'content' => $fert_content . "\n" . gl_tools_faq_html( $fert_faq ),
 		'faq'     => $fert_faq,
 		'order'   => 4,
@@ -389,6 +393,7 @@ HTML;
 		'Is pelletized lime better than ground lime?'                     => 'Both work the same way once they dissolve. Pelletized lime is ground limestone pressed into pellets, so it spreads more evenly with less dust through a lawn spreader. Compare products by the neutralizing value (calcium carbonate equivalent) on the label, not by form.',
 		'Should I use dolomitic or calcitic lime?'                        => 'Dolomitic lime contains magnesium as well as calcium, so it is the better choice when your soil test shows low magnesium. If magnesium is adequate, calcitic lime is fine.',
 		'How long does lime take to work?'                                => 'Lime reacts slowly. It can take several months to a year or more to fully change soil pH, which is why recommendations are spread over time and why it helps to retest the soil every two to three years.',
+		'How many bags of lime do I need?'                                => 'Multiply your soil test rate in pounds per 1,000 square feet by your lawn area in thousands of square feet, then divide by the bag weight. For 50 pounds per 1,000 square feet on a 5,000 square foot lawn: 250 pounds, which is 7 bags of 40 pounds or 5 bags of 50 pounds.',
 	);
 
 	$lime_content = <<<'HTML'
@@ -443,7 +448,7 @@ HTML;
 	$defs['lime'] = array(
 		'title'   => 'Lawn Lime Calculator',
 		'slug'    => 'lawn-lime-calculator',
-		'excerpt' => 'Convert a soil test lime recommendation into bags and a safe application schedule.',
+		'excerpt' => 'How much lime to put on your lawn: turn a soil test result into pounds per 1,000 sq ft, bags of pelletized or ground lime and a safe, split schedule.',
 		'content' => $lime_content . "\n" . gl_tools_faq_html( $lime_faq ),
 		'faq'     => $lime_faq,
 		'order'   => 5,
@@ -458,6 +463,7 @@ HTML;
 		'How many bags of mulch are in a yard?'              => 'One cubic yard is 27 cubic feet, so it equals 13.5 bags of 2 cubic feet, 18 bags of 1.5 cubic feet, or 9 bags of 3 cubic feet.',
 		'Should mulch touch the tree trunk?'                 => 'No. Piling mulch against a trunk, often called a mulch volcano, keeps the bark wet and can lead to rot and other damage. Keep a bare circle a few inches wide around the trunk and spread the mulch outward in a wide, flat ring.',
 		'Do I need to remove old mulch before adding new?'   => 'Usually not. Check how deep the old layer is first. If it is already 2 to 3 inches, just rake it to freshen it. If it has broken down to an inch or so, add only enough to bring it back to 2 to 3 inches. Enter the existing depth in the calculator to get the top-up amount.',
+		'How much area does a yard of mulch cover?'          => 'One cubic yard covers about 162 square feet at 2 inches deep and 108 square feet at 3 inches deep. A 2-cubic-foot bag covers about 12 square feet at 2 inches or 8 square feet at 3 inches.',
 	);
 	$mulch_content = <<<'HTML'
 <p class="gl-lede">Work out how much mulch to buy for every bed and tree ring in your yard at once. Add each area, choose your depth, and get the number of bags or cubic yards, with a side-by-side cost of bagged versus bulk mulch.</p>
@@ -508,7 +514,7 @@ HTML;
 	$defs['mulch'] = array(
 		'title'   => 'Mulch Calculator',
 		'slug'    => 'mulch-calculator',
-		'excerpt' => 'How many bags or cubic yards of mulch for all your beds and tree rings, with bagged vs bulk cost.',
+		'excerpt' => 'How much mulch do I need? Bags or cubic yards for every bed and tree ring at 2–3 inches deep, top-up amounts and bagged vs bulk cost.',
 		'content' => $mulch_content . "\n" . gl_tools_faq_html( $mulch_faq ),
 		'faq'     => $mulch_faq,
 		'order'   => 6,
@@ -523,6 +529,7 @@ HTML;
 		'How much compost for a new lawn?'                     => 'Oregon State University Extension suggests mixing 1 to 2 inches of compost into the soil before seeding or laying sod, which is about 3.1 to 6.2 cubic yards per 1,000 square feet.',
 		'Can I topdress my lawn with compost?'                 => 'Yes. A thin layer of about ¼ to ½ inch, raked into the grass so the blades still show, improves the soil over time. It works especially well right after core aeration.',
 		'How many bags of compost are in a cubic yard?'        => 'A cubic yard is 27 cubic feet: 27 bags of 1 cubic foot, 18 bags of 1.5 cubic feet, or 36 bags of 0.75 cubic feet.',
+		'How much area does a yard of compost cover?'           => 'One cubic yard is 27 cubic feet. It covers about 1,300 square feet at ¼ inch (lawn topdressing), 324 square feet at 1 inch, and about 108 square feet at 3 inches (a new bed).',
 	);
 	$compost_content = <<<'HTML'
 <p class="gl-lede">Find out how much compost to buy for a new bed, a yearly top-up or your lawn. Pick the project and the calculator uses the depth university extension guides recommend, then gives cubic feet, cubic yards and bags.</p>
@@ -563,6 +570,7 @@ HTML;
 <ul>
 <li><strong>Mix it in for new beds.</strong> Spread the compost, then dig or till it into the top 6 to 8 inches of soil so roots grow into improved soil, not just a layer on top.</li>
 <li><strong>Use mature compost.</strong> Finished compost is dark, crumbly and smells earthy. Raw or hot compost can tie up nitrogen and harm young plants.</li>
+<li><strong>Leveling bumps and dips rather than feeding the soil?</strong> Use our <a href="/topsoil-calculator/">topsoil calculator</a>, which plans leveling in thin passes.</li>
 <li><strong>Don't overdo it every year.</strong> Once beds are established, a thin yearly layer is plenty. Very heavy yearly applications can build up more nutrients, such as phosphorus, than plants need.</li>
 </ul>
 
@@ -574,7 +582,7 @@ HTML;
 	$defs['compost'] = array(
 		'title'   => 'Compost Calculator',
 		'slug'    => 'compost-calculator',
-		'excerpt' => 'How much compost for new beds, yearly top-ups and lawns, in cubic feet, cubic yards and bags.',
+		'excerpt' => 'How much compost do I need? Cubic feet, yards and bags for new garden beds, yearly top-ups, new lawns and lawn topdressing, at extension-recommended depths.',
 		'content' => $compost_content . "\n" . gl_tools_faq_html( $compost_faq ),
 		'faq'     => $compost_faq,
 		'order'   => 7,
@@ -589,6 +597,7 @@ HTML;
 		'How much extra sod should I order?'             => 'Order about 5% extra for simple rectangular lawns and up to 10% for curved edges, beds and trees, to cover cuts and measuring errors.',
 		'How many pieces of sod do I need?'              => 'Divide the area in square feet, plus your waste allowance, by the size of one piece. For 1,000 square feet plus 5% using 16 by 24 inch slabs: 1,050 ÷ 2.67 ≈ 394 slabs.',
 		'How soon should I lay sod after delivery?'      => 'The same day if possible. Sod stacked on a pallet heats up and dries out quickly, especially in warm weather, so have the soil prepared before it arrives.',
+		'How many pallets of sod do I need for 1,000 square feet?' => 'With 5% extra you need about 1,050 square feet: 3 pallets of 450 or 500 square feet, or, if your supplier sells partial pallets, 2 pallets of 500 square feet plus about 19 slabs of 16 by 24 inches.',
 	);
 	$sod_content = <<<'HTML'
 <p class="gl-lede">Measure your lawn areas and find out exactly how many pallets and pieces of sod to order. The calculator handles slabs and rolls, adds extra for cuts, and shows a partial-pallet option if your supplier sells sod by the piece.</p>
@@ -645,7 +654,7 @@ HTML;
 	$defs['sod'] = array(
 		'title'   => 'Sod Calculator',
 		'slug'    => 'sod-calculator',
-		'excerpt' => 'How many pallets and pieces of sod to order, with extra for cuts and a partial-pallet option.',
+		'excerpt' => 'How much sod do I need? Pallets, slabs and rolls for any lawn size, with extra for cuts, a partial-pallet option and total cost.',
 		'content' => $sod_content . "\n" . gl_tools_faq_html( $sod_faq ),
 		'faq'     => $sod_faq,
 		'order'   => 8,
@@ -660,6 +669,7 @@ HTML;
 		'Why do grass seeding rates vary so much?'             => 'Seed size varies enormously between grasses. A pound of Kentucky bluegrass contains far more seeds than a pound of tall fescue, so you need fewer pounds of bluegrass to get the same number of seeds per square foot.',
 		'When is the best time to plant grass seed?'           => 'Sow cool-season grasses such as fescue, bluegrass and ryegrass in late summer to early fall, when soil is warm and air is cooling. Sow warm-season grasses such as bermudagrass and zoysiagrass in late spring to early summer, once the soil has warmed.',
 		'What is the difference between hulled and unhulled bermudagrass seed?' => 'Hulled seed has had its outer husk removed, so it germinates faster and you need less of it. Unhulled seed is typically sown at about double the hulled rate.',
+		'How much grass seed do I need per acre?'               => 'An acre is 43,560 square feet, so multiply the rate per 1,000 square feet by 43.56. For a new lawn that is about 220 to 350 pounds of tall fescue, 65 to 87 pounds of Kentucky bluegrass, or 175 to 260 pounds of perennial ryegrass. Overseeding takes about half as much.',
 	);
 	$seed_content = <<<'HTML'
 <p class="gl-lede">Find out how many pounds of grass seed to buy for your lawn. Pick your grass type, choose a new lawn or overseeding, add your lawn areas, and get the amount, bags to buy and the best time to sow.</p>
@@ -723,7 +733,7 @@ HTML;
 	$defs['grass_seed'] = array(
 		'title'   => 'Grass Seed Calculator',
 		'slug'    => 'grass-seed-calculator',
-		'excerpt' => 'Pounds of grass seed by grass type for a new lawn or overseeding, with bags and when to sow.',
+		'excerpt' => 'How much grass seed per 1,000 sq ft or per acre for fescue, bluegrass, ryegrass and bermuda, for a new lawn or overseeding, with bags to buy.',
 		'content' => $seed_content . "\n" . gl_tools_faq_html( $seed_faq ),
 		'faq'     => $seed_faq,
 		'order'   => 9,
@@ -738,6 +748,8 @@ HTML;
 		'How many bags of gravel are in a cubic yard?'         => 'A cubic yard is 27 cubic feet, so it equals 54 bags of 0.5 cubic feet or 36 bags of 0.75 cubic feet. For more than a yard or so, bulk delivery is usually much cheaper than bags.',
 		'How deep should gravel be for a walkway?'             => 'Two to three inches of surface gravel is common for a walkway or patio, over a firm, well-drained base. Driveways need much more: several inches of base stone under the surface layer.',
 		'Should I order extra gravel?'                         => 'For compacted stone such as a driveway base, order about 5 to 10% extra to allow for compaction and minor variations. Loose decorative stone needs little or no extra.',
+		'How much area does a ton of gravel cover?'             => 'At about 1.4 tons per cubic yard, a ton of crushed stone is roughly 19 cubic feet. Spread 2 inches deep it covers about 115 square feet, at 3 inches about 77 square feet, and at 4 inches about 58 square feet. Lighter stone covers more.',
+		'How much gravel do I need for a driveway?'              => 'Multiply length by width by depth in inches and divide by 12 for cubic feet, then by 27 for cubic yards. A 50 by 10 foot driveway with 4 inches of stone needs about 6.2 cubic yards, roughly 8.6 tons at 1.4 tons per yard. Work out each layer, such as base and surface stone, separately.',
 	);
 	$gravel_content = <<<'HTML'
 <p class="gl-lede">Work out how much gravel or crushed stone you need in cubic yards, tons and bags. Add your paths, patios or driveway, choose the stone and depth, and compare buying by the ton, by the yard or in bags.</p>
@@ -797,7 +809,7 @@ HTML;
 	$defs['gravel'] = array(
 		'title'   => 'Gravel Calculator',
 		'slug'    => 'gravel-calculator',
-		'excerpt' => 'How much gravel or crushed stone you need in cubic yards, tons and bags, with cost by the ton, yard or bag.',
+		'excerpt' => 'How much gravel do I need? Cubic yards, tons and bags of crushed stone, pea gravel or road base for driveways, paths and patios, with cost.',
 		'content' => $gravel_content . "\n" . gl_tools_faq_html( $gravel_faq ),
 		'faq'     => $gravel_faq,
 		'order'   => 10,
@@ -812,6 +824,7 @@ HTML;
 		'Should I use sand or topsoil to level a lawn?'          => 'Match the material to your existing soil. Clemson Extension advises using sand only if your native soil is sandy; otherwise use a topsoil similar to what you have. Layers of very different materials can interfere with water movement.',
 		'How deep should topsoil be for a new lawn?'             => 'The University of Nebraska–Lincoln recommends at least 4 inches of topsoil under a new lawn from sod, and Iowa State suggests 4 to 6 inches of good topsoil when seeding.',
 		'How many bags of topsoil are in a cubic yard?'          => 'A cubic yard is 27 cubic feet: 36 bags of 0.75 cubic feet or 27 bags of 1 cubic foot. Above a cubic yard, bulk topsoil is usually far cheaper.',
+		'How much area does a yard of topsoil cover?'            => 'One cubic yard (27 cubic feet) covers about 324 square feet at 1 inch deep, 162 square feet at 2 inches, 81 square feet at 4 inches and 54 square feet at 6 inches.',
 	);
 	$topsoil_content = <<<'HTML'
 <p class="gl-lede">Find out how much topsoil you need to level low spots in your lawn, put down a base for a new lawn, or fill and raise an area. For lawn leveling, the calculator also splits the job into safe, thin passes so the grass survives.</p>
@@ -845,6 +858,7 @@ HTML;
 <ul>
 <li><strong>Match your soil.</strong> Use sand only if your native soil is sandy. On other soils, use a screened topsoil similar to what you have.</li>
 <li><strong>Check what you buy.</strong> Topsoil and river sand can carry weed seeds, and nutrient levels vary, so buy from a reputable supplier and consider testing it.</li>
+<li><strong>Want to improve the whole lawn rather than fill dips?</strong> A thin topdressing of compost does that; see our <a href="/compost-calculator/">compost calculator</a>.</li>
 <li><strong>For deep dips,</strong> many people cut and lift the sod, fill underneath with soil, firm it, and lay the sod back down rather than making many thin passes.</li>
 </ul>
 
@@ -861,7 +875,7 @@ HTML;
 	$defs['topsoil'] = array(
 		'title'   => 'Topsoil Calculator',
 		'slug'    => 'topsoil-calculator',
-		'excerpt' => 'Topsoil for leveling lawn low spots in safe ½-inch passes, new lawns or filling areas, in cubic yards and bags.',
+		'excerpt' => 'How much topsoil do I need? Cubic yards and bags to level a lawn in safe ½-inch passes, lay a new lawn or fill an area.',
 		'content' => $topsoil_content . "\n" . gl_tools_faq_html( $topsoil_faq ),
 		'faq'     => $topsoil_faq,
 		'order'   => 11,
@@ -876,6 +890,7 @@ HTML;
 		'How thick should bedding sand be under pavers?'   => 'About 1 inch of bedding sand is typical, screeded smooth over the compacted base. Don’t use the sand to fix low spots in the base; level the base itself.',
 		'How deep do I need to dig for a paver patio?'     => 'Add the base depth, the bedding sand and the paver thickness. For 6 inches of base, 1 inch of sand and 2⅜-inch pavers, dig about 9⅜ inches below the finished surface.',
 		'How do I compact a paver base?'                   => 'Spread and compact the base in layers. Unilock notes that typical plate compactors only compact about 3 to 4 inches at a time, so a 6-inch base needs at least two layers.',
+		'How much paver base do I need for a 12x12 patio?'  => 'With a 6-inch base extended 6 inches past each edge, the base covers 13 by 13 feet, or 169 square feet. That is 84.5 cubic feet of base; with 10% extra for compaction, roughly 3.4 cubic yards or 4.8 tons. Add about 12 cubic feet of bedding sand at 1 inch.',
 	);
 	$paver_content = <<<'HTML'
 <p class="gl-lede">Plan the base for a paver patio, walkway or driveway. Enter the paved area and the calculator works out base gravel, bedding sand and how much soil to dig out, with the base widened past the edges the way manufacturers recommend.</p>
@@ -919,7 +934,7 @@ HTML;
 
 <h2>Tips for a base that lasts</h2>
 <ul>
-<li><strong>Use a dense-graded base</strong> such as crushed stone with fines (often sold as road base or crusher run), which compacts firmly. See our <a href="/gravel-calculator/">gravel calculator</a> for stone weights.</li>
+<li><strong>Use a dense-graded base</strong> such as crushed stone with fines (often sold as road base or crusher run), which compacts firmly. For a loose gravel path or patio without pavers, use our <a href="/gravel-calculator/">gravel calculator</a> instead.</li>
 <li><strong>Slope for drainage.</strong> Unilock suggests 1 to 2%, which is about ½ inch of fall over 4 feet at 1%. Slope away from the house.</li>
 <li><strong>Compact the soil first,</strong> then each layer of base, wetting it lightly if it is dry.</li>
 <li><strong>Screed the sand, don’t compact it,</strong> before laying pavers, then compact the pavers and sweep in joint sand.</li>
@@ -934,7 +949,7 @@ HTML;
 	$defs['paver_base'] = array(
 		'title'   => 'Paver Base Calculator',
 		'slug'    => 'paver-base-calculator',
-		'excerpt' => 'Base gravel, bedding sand and digging depth for paver patios, walkways and driveways.',
+		'excerpt' => 'How much paver base and sand do I need? Base gravel in tons and yards, bedding sand and dig depth for paver patios, walkways and driveways.',
 		'content' => $paver_content . "\n" . gl_tools_faq_html( $paver_faq ),
 		'faq'     => $paver_faq,
 		'order'   => 12,

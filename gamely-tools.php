@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Gamely Labs Tools
  * Description:       Lawn, garden and yard calculators for Gamely Labs. Each tool is a shortcode; on activation or upgrade the plugin creates the tool pages and the homepage.
- * Version:           1.6.0
+ * Version:           1.7.0
  * Update URI:        false
  * Requires at least: 6.0
  * Requires PHP:      7.4
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'GL_TOOLS_VERSION', '1.6.0' );
+define( 'GL_TOOLS_VERSION', '1.7.0' );
 define( 'GL_TOOLS_AUTHOR', 'Junaid Arif' );
 define( 'GL_TOOLS_OWNER', 'AJ Tech Studio' );
 define( 'GL_TOOLS_EMAIL', 'info@ajtechstudio.com' );
@@ -25,6 +25,7 @@ define( 'GL_TOOLS_DIR', plugin_dir_path( __FILE__ ) );
 
 require_once GL_TOOLS_DIR . 'includes/pages.php';
 require_once GL_TOOLS_DIR . 'includes/posts.php';
+require_once GL_TOOLS_DIR . 'includes/seo.php';
 
 /**
  * Public catalog of tools, used by the Gamely theme for menus, cards and related tools.
@@ -158,9 +159,19 @@ function gl_tools_sync_pages() {
 			$known            = array_merge( isset( $legacy[ $key ] ) ? $legacy[ $key ] : array(), isset( $hashes[ $key ] ) ? array( $hashes[ $key ] ) : array() );
 			$new_hash         = md5( $content );
 			// Only overwrite content we wrote ourselves and nobody has edited since.
-			if ( $current_hash !== $new_hash && in_array( $current_hash, $known, true ) ) {
-				wp_update_post( array( 'ID' => $existing->ID, 'post_content' => $content ) );
-				$hashes[ $key ] = md5( get_post( $existing->ID )->post_content );
+			// The excerpt (used as the meta description) follows the same rule.
+			if ( in_array( $current_hash, $known, true ) ) {
+				$update = array( 'ID' => $existing->ID );
+				if ( $current_hash !== $new_hash ) {
+					$update['post_content'] = $content;
+				}
+				if ( isset( $def['excerpt'] ) && $existing->post_excerpt !== $def['excerpt'] ) {
+					$update['post_excerpt'] = $def['excerpt'];
+				}
+				if ( count( $update ) > 1 ) {
+					wp_update_post( $update );
+					$hashes[ $key ] = md5( get_post( $existing->ID )->post_content );
+				}
 			}
 			continue;
 		}

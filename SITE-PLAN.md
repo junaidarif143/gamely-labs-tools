@@ -25,3 +25,4 @@ Started: **Thursday, October 22, 2026**
 
 - 2026-10-22: Plan started. Tools 1–9 and guides 1–8 live.
 - 2026-10-22: Gravel, Topsoil and Paver Base calculators live (12 tools). New "Yard tools" section in menu, homepage and footer.
+- 2026-10-28: Keyword/topical clustering applied (v1.7.0): one intent per page, SEO titles, cluster meta descriptions, variant FAQs, two cannibalization fixes. See SEO-CLUSTERS.md.
