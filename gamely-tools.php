@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Gamely Labs Tools
  * Description:       Lawn, garden and yard calculators for Gamely Labs. Each tool is a shortcode; on activation or upgrade the plugin creates the tool pages and the homepage.
- * Version:           1.9.0
+ * Version:           1.10.0
  * Update URI:        false
  * Requires at least: 6.0
  * Requires PHP:      7.4
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'GL_TOOLS_VERSION', '1.9.0' );
+define( 'GL_TOOLS_VERSION', '1.10.0' );
 define( 'GL_TOOLS_AUTHOR', 'Junaid Arif' );
 define( 'GL_TOOLS_OWNER', 'AJ Tech Studio' );
 define( 'GL_TOOLS_EMAIL', 'info@ajtechstudio.com' );
@@ -26,6 +26,7 @@ define( 'GL_TOOLS_DIR', plugin_dir_path( __FILE__ ) );
 require_once GL_TOOLS_DIR . 'includes/pages.php';
 require_once GL_TOOLS_DIR . 'includes/posts.php';
 require_once GL_TOOLS_DIR . 'includes/seo.php';
+require_once GL_TOOLS_DIR . 'includes/images.php';
 
 /**
  * Public catalog of tools, used by the Gamely theme for menus, cards and related tools.

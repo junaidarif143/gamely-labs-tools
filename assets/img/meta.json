@@ -1,0 +1,122 @@
+{
+ "sprinkler-run-time-calculator": {
+  "title": "The catch-cup test",
+  "alt": "Diagram of a catch-cup test: six cans spread across a lawn zone, run for 15 minutes, then the average depth multiplied by 4 gives inches per hour.",
+  "caption": "Run one zone for 15 minutes, average the water in the cups, and multiply by 4 to get your sprinkler's rate in inches per hour."
+ },
+ "lawn-fertilizer-calculator": {
+  "title": "Reading the bag",
+  "alt": "Diagram of a fertilizer bag labelled 32-0-4 showing nitrogen, phosphate and potash percentages, and the sum 1 pound of nitrogen divided by 0.32 equals 3.1 pounds of product per 1,000 square feet.",
+  "caption": "The first number is the nitrogen percentage. To apply 1 lb of nitrogen per 1,000 sq ft from a 32-0-4 product, spread 1 ÷ 0.32 ≈ 3.1 lb."
+ },
+ "lawn-lime-calculator": {
+  "title": "Where your soil pH sits",
+  "alt": "A soil pH scale from 4 to 9 with the 5.5 to 7.0 target range for lawns highlighted; lime raises low pH and sulfur lowers high pH.",
+  "caption": "Lawns and vegetable gardens do best around pH 5.5–7.0 (University of Maryland Extension). Lime raises pH; sulfur lowers it. Your soil test tells you how much."
+ },
+ "square-foot-garden-planner": {
+  "title": "One square, 1 to 16 plants",
+  "alt": "A 4 by 4 foot raised bed divided into 16 one-foot squares, with examples of 1, 4, 9 and 16 plants per square.",
+  "caption": "Each 1-foot square holds 1, 4, 9 or 16 plants depending on plant size: one tomato, four lettuces, nine bush beans or sixteen carrots."
+ },
+ "raised-bed-soil-calculator": {
+  "title": "Measure the bed, fill the volume",
+  "alt": "Cut-away raised bed 8 feet long, 4 feet wide and 1 foot deep, filled with a soil and compost mix, totalling 32 cubic feet or about 1.2 cubic yards.",
+  "caption": "Length × width × depth gives cubic feet; divide by 27 for cubic yards. An 8 × 4 ft bed filled 12 in deep holds 32 cu ft, about 1.2 cu yd."
+ },
+ "mulch-calculator": {
+  "title": "2 to 3 inches, flat and wide",
+  "alt": "Cross-section of a garden bed with a 2 to 3 inch layer of mulch over the soil and a bare gap left around the base of a shrub.",
+  "caption": "Spread mulch 2 to 3 inches deep in an even layer, and keep it an inch or two back from stems and trunks."
+ },
+ "compost-calculator": {
+  "title": "How deep to spread compost",
+  "alt": "Three cross-sections comparing compost depths: 3 to 4 inches mixed into a new bed, 1/4 to 1 inch as a yearly top-up, and about 1/4 inch as lawn topdressing.",
+  "caption": "Depths from Oregon State University Extension: 3–4 in mixed into new beds, ¼–1 in a year as a top-up, about ¼ in as lawn topdressing."
+ },
+ "sod-calculator": {
+  "title": "Lay sod like bricks",
+  "alt": "Top view of sod slabs laid in rows with the joints staggered like brickwork, starting along a straight edge, with measurements for a rectangular lawn area.",
+  "caption": "Measure the area, add a few percent for cuts, and lay the slabs in staggered rows starting from a straight edge such as a driveway."
+ },
+ "grass-seed-calculator": {
+  "title": "New lawn or overseeding?",
+  "alt": "Side-by-side lawn plots: bare soil seeded at the full new-lawn rate on the left, and a thin existing lawn overseeded at a lower rate on the right.",
+  "caption": "A bare-soil lawn needs the full seeding rate for your grass type; overseeding a thin lawn uses a lower rate because grass is already there."
+ },
+ "gravel-calculator": {
+  "title": "Area × depth = stone to order",
+  "alt": "Cross-section of a gravel path showing 3 inches of crushed stone over firm soil, with the formula area times depth divided by 12 for cubic feet, divided by 27 for cubic yards, times about 1.4 for tons.",
+  "caption": "A 30 × 3 ft path at 3 in deep needs about 0.88 cubic yards, roughly 1.2 tons of crushed stone at 1.4 tons per yard."
+ },
+ "topsoil-calculator": {
+  "title": "Filling low spots and new beds",
+  "alt": "Cross-section of uneven lawn ground with a low spot filled with topsoil to level, and a new lawn area with 4 to 6 inches of topsoil spread over subsoil.",
+  "caption": "Measure how deep each low spot is, or use 4–6 in of good topsoil when preparing ground for seed. One cubic yard covers about 81 sq ft at 4 in."
+ },
+ "paver-base-calculator": {
+  "title": "Layers under a paver patio",
+  "alt": "Cross-section of a paver patio: pavers on 1 inch of bedding sand over 4 to 6 inches of compacted base, with the base extending past the paver edge by the same distance as its depth.",
+  "caption": "Unilock's guideline for patios and walkways: 4–6 in of compacted base, about 1 in of bedding sand, and a base that extends past the edge as far as it is deep."
+ },
+ "when-to-fertilize-lawn": {
+  "title": "When to feed your lawn",
+  "alt": "Calendar chart: cool-season lawns get their main feeding in late summer to early fall and a second in late spring; warm-season lawns are fed from late spring through summer after green-up.",
+  "caption": "Cool-season grass: main feeding late summer to early fall, a lighter one in late spring. Warm-season grass: feed after green-up through summer, and stop in late summer."
+ },
+ "how-to-water-new-grass-seed": {
+  "title": "Watering new seed, stage by stage",
+  "alt": "Three stages of watering new grass seed: light watering about twice a day until germination, then less often but deeper once seedlings are 1 to 2 inches, then about once a week after two or three mowings.",
+  "caption": "Keep the surface moist until germination (2–3 weeks), water less often but deeper once seedlings reach 1–2 in, then switch to about once a week after two or three mowings."
+ },
+ "fall-lawn-care-checklist": {
+  "title": "Fall lawn care, in order",
+  "alt": "Fall lawn care timeline for cool-season lawns: seed and core aerate from late August to mid-September; fertilize and soil test in mid-September; treat broadleaf weeds, keep mowing, deal with leaves and water in dry spells into early November; then a last mow and winter storage before the ground freezes.",
+  "caption": "For cool-season lawns: seed and aerate late August to mid-September, feed in mid-September, keep mowing and managing leaves into November, and put tools away before the ground freezes."
+ },
+ "how-to-read-soil-test": {
+  "title": "Reading a soil test report",
+  "alt": "Simplified soil test report showing pH, buffer pH, phosphorus, potassium, organic matter and CEC, with notes explaining what each result means.",
+  "caption": "The key lines: pH (5.5–7.0 is the usual lawn and vegetable target), buffer pH for lime needs, phosphorus and potassium levels, organic matter and CEC."
+ },
+ "how-to-overseed-lawn": {
+  "title": "Overseeding in seven steps",
+  "alt": "Seven-step overseeding sequence: find why the lawn is thin, pick the right time, mow short and clear debris, open up the soil, spread seed, water lightly and often, care for the new grass.",
+  "caption": "The order matters: fix the cause, seed at the right time, mow short, loosen the soil so seed touches it, then keep it moist until it is established."
+ },
+ "how-to-lay-sod": {
+  "title": "Laying sod the right way",
+  "alt": "Steps for laying sod: start along a straight edge, stagger the joints like bricks, butt the edges tight without overlapping, cut pieces to fit curves, roll lightly and water right away.",
+  "caption": "Start along a straight edge, stagger joints like brickwork, butt edges tight without stretching, roll lightly, then water thoroughly right away."
+ },
+ "raised-bed-soil-mixes": {
+  "title": "Three raised bed soil mixes",
+  "alt": "Comparison of three raised bed fills: a 50/50 mix of topsoil and compost, the square foot gardening mix of one-third compost, one-third peat or coir and one-third vermiculite, and a bagged raised bed mix.",
+  "caption": "Topsoil and compost 50/50 is cheapest in bulk; the square foot gardening mix (⅓ compost, ⅓ peat or coir, ⅓ vermiculite) is lightest; bagged mixes are easiest for small beds."
+ },
+ "mulching-mistakes": {
+  "title": "Mulch volcano vs. mulch doughnut",
+  "alt": "Side-by-side comparison: wrong, mulch piled high against a tree trunk in a volcano; right, a wide flat ring of mulch 2 to 3 inches deep with a bare circle around the trunk.",
+  "caption": "Don't pile mulch against the trunk. Spread a wide, flat ring 2–3 inches deep and leave a bare circle a few inches across around the trunk."
+ },
+ "how-much-water-does-lawn-need": {
+  "title": "About an inch a week, rain included",
+  "alt": "A weekly water budget for a cool-season lawn: about 1 inch total per week, with an example of 0.5 inch from rain and 0.5 inch from the sprinklers, watered deeply once or twice.",
+  "caption": "Cool-season lawns need about 1–1½ inches of water a week (University of Illinois Extension), and rain counts. Water deeply and infrequently to make up the difference."
+ },
+ "spring-lawn-care-checklist": {
+  "title": "Spring lawn care, in order",
+  "alt": "Spring lawn care timeline: in early spring rake, get the mower ready and test the soil; in mid-spring when forsythia blooms apply crabgrass preventer if needed and seed bare spots early; in late spring mow high, fertilize and check the sprinklers.",
+  "caption": "Early spring: clean up, ready the mower and test the soil. When forsythia blooms: crabgrass preventer if needed. Late spring: mow high, fertilize and check your sprinklers."
+ },
+ "how-to-build-gravel-path": {
+  "title": "Building a gravel path",
+  "alt": "Cross-section of a gravel path: a trench about 4 inches deep, edging on both sides, about 2.5 inches of compacted base stone, landscape fabric, then surface gravel filled to about half an inch below the top of the edging.",
+  "caption": "This Old House's method: dig about 4 in, set edging, tamp about 2½ in of base stone, lay landscape fabric, then fill surface gravel to about ½ in below the edging."
+ },
+ "how-to-level-bumpy-lawn": {
+  "title": "Two ways to level a lawn",
+  "alt": "Two methods: for shallow dips, topdress with up to half an inch of leveling mix at a time and let the grass grow through; for dips deeper than about an inch, cut and lift the sod, fill underneath with soil, and lay it back.",
+  "caption": "Shallow dips: topdress no more than ½ in at a time and let the grass grow through before repeating. Dips deeper than about 1 in: lift the sod, fill beneath it, and relay it."
+ }
+}
