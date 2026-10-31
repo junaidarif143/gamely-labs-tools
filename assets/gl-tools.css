@@ -392,3 +392,12 @@ a.gl-btn, a.gl-btn:hover { color: #FFFDF7; text-decoration: none; }
 	.gl-noprint { display: none !important; }
 	.gl-cell, .gl-bed-grid { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+
+/* ---------- Team section (About page) ---------- */
+.gl-team { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; margin: 20px 0 28px; }
+.gl-person { display: flex; gap: 16px; align-items: flex-start; padding: 20px; background: var(--gl-surface); border: 1px solid var(--gl-line); border-radius: 20px; }
+.gl-person img { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; flex: none; }
+.gl-person h3 { margin: 0 0 2px; font-size: 21px; }
+.gl-person p { margin: 0; font-size: 15.5px; line-height: 1.6; }
+.gl-person .gl-person-role { font-size: 14px; color: var(--gl-muted); margin-bottom: 8px; }
+@media (max-width: 480px) { .gl-person { flex-direction: column; } .gl-person img { width: 80px; height: 80px; } }

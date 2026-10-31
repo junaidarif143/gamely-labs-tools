@@ -13,7 +13,7 @@ units, bed/lawn sizes, materials). They are not volume-checked yet: at the Searc
 
 | Cluster (intent) | Owner page | Variations the page must answer |
 |---|---|---|
-| How long to water / sprinkler minutes | /sprinkler-run-time-calculator/ | sprinkler run time calculator, how long to water lawn, how long to run sprinklers for 1 inch, minutes per zone, rotor vs spray run time, how much water does a lawn need per week, cycle and soak |
+| How long to water / sprinkler minutes | /sprinkler-run-time-calculator/ | sprinkler run time calculator, how long to water lawn, how long to run sprinklers for 1 inch, minutes per zone, rotor vs spray run time, cycle and soak |
 | How much fertilizer to apply | /lawn-fertilizer-calculator/ | lawn fertilizer calculator, how much fertilizer per 1,000 sq ft, how much 10-10-10 per 1,000 sq ft, how many sq ft does a bag cover, N-P-K meaning, nitrogen per application |
 | How much lime to apply | /lawn-lime-calculator/ | lawn lime calculator, how much lime per 1,000 sq ft, how many bags of lime, tons per acre to lb per 1,000, pelletized vs ground lime |
 | Plan a square foot garden | /square-foot-garden-planner/ | square foot garden planner, plants per square foot, square foot gardening spacing chart, 4x8 / 4x4 layout, square foot garden soil mix |
@@ -39,6 +39,10 @@ Guides own the **informational / how-to** intent and link to their calculator; c
 | How to lay sod | laying sod steps | how much sod (calculator) |
 | Raised bed soil mixes compared | **best soil for raised beds** | how much soil (calculator) |
 | Mulching mistakes | mulching mistakes | how much mulch (calculator) |
+| How much water does a lawn need | how much water a lawn needs per week, signs a lawn needs water, deep vs frequent watering | sprinkler minutes per zone (calculator) |
+| Spring lawn care checklist | spring lawn tasks, crabgrass preventer timing | — |
+| How to build a gravel path | gravel path steps | how much gravel (calculator) |
+| How to level a bumpy lawn | leveling steps, lifting sod | how much topsoil (calculator) |
 
 ## Cannibalization found and fixed (v1.7.0)
 
@@ -62,3 +66,9 @@ Guides own the **informational / how-to** intent and link to their calculator; c
 - 1–2 new FAQs per tool answering the top variations (coverage per ton/yard/bag, common bed
   sizes, per acre, driveway, 12x12 patio, 1,000 sq ft). FAQ schema picks them up automatically.
 - "Related tools" sidebar uses each tool's own cluster neighbours instead of the first 3 in its category.
+
+## Fixed Oct 31, 2026 (v1.9.0)
+
+5. **"How much water does a lawn need per week?"** was a Sprinkler calculator FAQ and the target of the new guide
+   "How Much Water Does Your Lawn Really Need?". The guide now owns that informational question; the calculator keeps
+   "how long to run sprinklers" and its FAQ became "What weekly water target should I enter?", pointing to the guide.

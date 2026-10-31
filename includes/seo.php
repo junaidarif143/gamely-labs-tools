@@ -77,3 +77,99 @@ function gl_tools_document_title( $parts ) {
 	}
 	return $parts;
 }
+
+/* ---------------------------------------------------------------
+ * Author pages: keep them out of the sitemap and send visitors to About.
+ * The default author archive is a thin duplicate and its URL shows the login name.
+ * ------------------------------------------------------------- */
+add_filter( 'wp_sitemaps_add_provider', function ( $provider, $name ) {
+	return 'users' === $name ? false : $provider;
+}, 10, 2 );
+
+add_action( 'template_redirect', function () {
+	if ( is_author() ) {
+		$about = get_page_by_path( 'about' );
+		wp_safe_redirect( $about ? get_permalink( $about ) : home_url( '/' ), 301 );
+		exit;
+	}
+} );
+
+// Hide user records from the public REST API listing (they expose login slugs).
+add_filter( 'rest_endpoints', function ( $endpoints ) {
+	if ( ! is_user_logged_in() ) {
+		unset( $endpoints['/wp/v2/users'], $endpoints['/wp/v2/users/(?P<id>[\d]+)'] );
+	}
+	return $endpoints;
+} );
+
+/* ---------------------------------------------------------------
+ * Structured data: Organization + WebSite on the homepage, WebApplication on calculators.
+ * ------------------------------------------------------------- */
+add_action( 'wp_head', 'gl_tools_site_schema', 4 );
+function gl_tools_site_schema() {
+	$org = array(
+		'@type'  => 'Organization',
+		'@id'    => home_url( '/#organization' ),
+		'name'   => get_bloginfo( 'name' ),
+		'url'    => home_url( '/' ),
+		'email'  => GL_TOOLS_EMAIL,
+		'parentOrganization' => array( '@type' => 'Organization', 'name' => GL_TOOLS_OWNER ),
+		'founder' => array_values( array_map( function ( $p ) {
+			return array( '@type' => 'Person', 'name' => $p['name'], 'jobTitle' => $p['role'], 'image' => $p['photo'] );
+		}, gl_tools_team() ) ),
+	);
+	if ( is_front_page() ) {
+		$data = array(
+			'@context' => 'https://schema.org',
+			'@graph'   => array(
+				$org,
+				array(
+					'@type'     => 'WebSite',
+					'@id'       => home_url( '/#website' ),
+					'name'      => get_bloginfo( 'name' ),
+					'url'       => home_url( '/' ),
+					'publisher' => array( '@id' => home_url( '/#organization' ) ),
+				),
+			),
+		);
+		echo '<script type="application/ld+json">' . wp_json_encode( $data ) . '</script>' . "\n";
+		return;
+	}
+	if ( ! is_page() ) {
+		return;
+	}
+	$slug = get_post_field( 'post_name', get_queried_object_id() );
+	foreach ( gl_tools_catalog() as $key => $tool ) {
+		if ( $tool['slug'] !== $slug ) {
+			continue;
+		}
+		$data = array(
+			'@context'            => 'https://schema.org',
+			'@type'               => 'WebApplication',
+			'name'                => $tool['title'],
+			'url'                 => get_permalink( get_queried_object_id() ),
+			'description'         => get_the_excerpt( get_queried_object_id() ),
+			'applicationCategory' => 'UtilitiesApplication',
+			'operatingSystem'     => 'Any (runs in the browser)',
+			'browserRequirements' => 'Requires JavaScript',
+			'isAccessibleForFree' => true,
+			'offers'              => array( '@type' => 'Offer', 'price' => '0', 'priceCurrency' => 'USD' ),
+			'publisher'           => array( '@type' => 'Organization', 'name' => get_bloginfo( 'name' ), 'url' => home_url( '/' ) ),
+		);
+		echo '<script type="application/ld+json">' . wp_json_encode( $data ) . '</script>' . "\n";
+		return;
+	}
+}
+
+/* ---------------------------------------------------------------
+ * Site time zone: US Pacific (the owners' working clock), set once.
+ * ------------------------------------------------------------- */
+add_action( 'init', function () {
+	if ( get_option( 'gl_tools_tz_set' ) ) {
+		return;
+	}
+	if ( '' === (string) get_option( 'timezone_string' ) && 0.0 === (float) get_option( 'gmt_offset' ) ) {
+		update_option( 'timezone_string', 'America/Los_Angeles' );
+	}
+	update_option( 'gl_tools_tz_set', 1 );
+}, 5 );

@@ -27,7 +27,7 @@ function gl_tools_page_definitions() {
 		'What is cycle and soak?'                                     => 'Cycle and soak splits one long watering into two or more shorter runs with a 30 to 60 minute break between them. The break lets water sink in before the next run, so less of it runs off. It matters most on clay soil, slopes and fast spray heads.',
 		'What time of day should I water my lawn?'                    => 'Early morning, roughly between 4 and 10 a.m., is generally best. Wind is usually calmer and less water evaporates, and the grass dries during the day, which lowers the risk of fungal disease compared with watering in the evening.',
 		'How do I do a catch-cup test?'                               => 'Place 6 to 8 straight-sided containers such as tuna cans or rain gauges around one zone, run that zone for 15 minutes, measure the water depth in each container and average them. Multiply the average depth in inches by 4 to get the zone\'s precipitation rate in inches per hour.',
-		'How much water does a lawn need per week?'                  => 'A common guideline is about 1 inch a week, rain included, for an actively growing lawn: more in hot, dry or windy weather and on sandy soil, less in spring and fall. The calculator suggests a weekly target for your grass and season, which you can change.',
+		'What weekly water target should I enter?'                   => 'Start with the target the calculator suggests for your grass type and season, then adjust: more in hot, dry or windy weeks and on sandy soil, less in cool weather. Our guide How Much Water Does Your Lawn Really Need? explains how to tell when a lawn is thirsty.',
 	);
 
 	$sprinkler_content = <<<'HTML'
@@ -962,7 +962,17 @@ HTML;
 <p class="gl-lede">Gamely Labs makes free, practical calculators for lawn, garden and yard projects, so homeowners can buy the right amount, water the right way and skip the guesswork.</p>
 
 <h2>Who runs Gamely Labs</h2>
-<p>Gamely Labs is built and run by <strong>Junaid Arif</strong> and is owned by <strong>AJ Tech Studio</strong>. Junaid designs and writes the calculators and the guides that go with them.</p>
+<p>Gamely Labs is owned by <strong>AJ Tech Studio</strong> and built by its two co-founders. Junaid writes the calculators, their math and the guides; Muhammad leads design and the site itself.</p>
+<div class="gl-team">
+<div class="gl-person" id="junaid-arif">
+<img src="https://gamelylabs.com/wp-content/uploads/2026/10/Junaid-Arif.webp" alt="Junaid Arif" width="120" height="120" loading="lazy">
+<div><h3>Junaid Arif</h3><p class="gl-person-role">Co-Founder &amp; Lead Developer</p><p>Full-stack developer and systems architect. Builds complex backend applications, including the Rafhan Soft hospital management system. Deep expertise in PHP, database design and custom plugin architecture, which powers every Gamely Labs calculator.</p></div>
+</div>
+<div class="gl-person" id="muhammad-ali">
+<img src="https://gamelylabs.com/wp-content/uploads/2026/10/Muhammad-Ali.webp" alt="Muhammad Ali" width="120" height="120" loading="lazy">
+<div><h3>Muhammad Ali</h3><p class="gl-person-role">Co-Founder &amp; Creative Director</p><p>WordPress developer since 2017. Leads product design, client relationships, creative direction and digital growth strategy. Specializes in WordPress architecture, content systems and automation tooling.</p></div>
+</div>
+</div>
 <p>We started Gamely Labs because most yard-project questions come down to simple math that is surprisingly hard to find in one place: how many minutes to run a sprinkler zone, how many bags of soil fill a raised bed, how much fertilizer a lawn really needs. The answers exist in university extension publications and product labels, but they are scattered, full of unit conversions, and rarely tailored to your yard. Our tools do that work for you.</p>
 
 <h2>How we build our tools</h2>
