@@ -477,6 +477,240 @@ HTML,
 HTML,
 	);
 
+	/* 9 --------------------------------------------------------------- */
+	$p['lawn_water'] = array(
+		'title'   => 'How Much Water Does Your Lawn Really Need?',
+		'slug'    => 'how-much-water-does-lawn-need',
+		'excerpt' => 'How many inches of water a lawn needs each week, how to tell when it’s thirsty, and how to turn inches into sprinkler minutes without wasting water.',
+		'tools'   => array( 'sprinkler' ),
+		'publish' => '2026-10-31 06:00:00',
+		'content' => <<<'HTML'
+<p class="gl-lede">Most lawns get either too much water or the wrong kind of watering: a little every day instead of a deep soak now and then. Here's how much water grass actually needs, how to tell when it's time to water, and how to make your sprinklers deliver the right amount.</p>
+
+<h2>The short answer: about an inch a week</h2>
+<p>University of Illinois Extension says cool-season lawns generally need about 1 to 1½ inches of water per week to stay green and growing, and that total includes rain. Hot, windy weeks and sandy soil sit at the high end; cool, cloudy weeks need less. Warm-season grasses such as bermuda and zoysia are generally more drought tolerant once established.</p>
+<p>The key word is <em>total</em>. If it rained half an inch on Tuesday, your sprinklers only need to supply the rest. Our <a href="/sprinkler-run-time-calculator/">sprinkler run time calculator</a> subtracts rainfall for you.</p>
+
+<h2>Water deeply and infrequently</h2>
+<p>Frequent, shallow watering keeps roots near the surface, where they dry out fastest, and University of Illinois Extension notes it also encourages weeds such as crabgrass. Watering deeply and less often pushes roots down into soil that stays moist longer, so the lawn handles dry spells better.</p>
+<ul>
+<li><strong>Most established lawns:</strong> one or two thorough waterings a week rather than a few minutes every day.</li>
+<li><strong>Exception: new seed and new sod,</strong> which need light, frequent watering until they root. See our guides to <a href="/how-to-water-new-grass-seed/">watering new grass seed</a> and <a href="/how-to-lay-sod/">laying sod</a>.</li>
+</ul>
+
+<h2>How to tell your lawn needs water</h2>
+<p>Rather than watering on a fixed schedule, let the lawn tell you. University of Illinois Extension describes three easy checks:</p>
+<ul>
+<li><strong>Footprints stay visible.</strong> Walk across the grass. If your footprints are still there a few minutes later, the blades have lost the water that springs them back up.</li>
+<li><strong>The color shifts.</strong> Drought-stressed grass turns a darker, blue-gray shade before it turns brown.</li>
+<li><strong>The screwdriver test.</strong> Push a long screwdriver into the soil. It slides in easily through moist soil and stops where the soil is dry, which shows how deep your last watering reached.</li>
+</ul>
+<p>A few warm days don't automatically mean it's time to water. Mild stress encourages roots to grow deeper.</p>
+
+<h2>When to water</h2>
+<p>Early morning is best. University of Illinois Extension advises avoiding midday, when much of the water evaporates, and nighttime, when grass that stays wet for hours is more prone to some diseases.</p>
+
+<h2>Turning inches into minutes</h2>
+<p>An inch of water means very different run times depending on your sprinklers. Fixed spray heads apply water roughly two to three times faster than rotors, so giving every zone the same minutes over-waters some areas and under-waters others.</p>
+<ol>
+<li><strong>Measure each zone.</strong> Set a few straight-sided containers, such as tuna or coffee cans, around one zone. Run it for 15 minutes, average the depth, and multiply by 4 to get inches per hour.</li>
+<li><strong>Divide the water you need by that rate.</strong> If a zone applies 0.6 inch per hour and you want 0.5 inch per watering, run it for about 50 minutes.</li>
+<li><strong>Split long runs on clay or slopes.</strong> If water runs off before the time is up, split the run into two or three shorter cycles with a break between them so it can soak in.</li>
+</ol>
+<p>The <a href="/sprinkler-run-time-calculator/">sprinkler run time calculator</a> does all three steps for every zone at once, including the cycle-and-soak split for your soil type, and shows how many gallons you use.</p>
+
+<h2>Letting the lawn go dormant</h2>
+<p>Not watering is a valid choice too. University of Illinois Extension notes that cool-season lawns can usually survive hot, dry summers by going dormant (brown) and green up again when cooler, wetter weather returns in fall. The mistake to avoid is switching back and forth: greening up a dormant lawn uses up its food reserves and makes it more vulnerable to disease. Pick one approach for the summer and stick with it, except in extreme drought.</p>
+
+<h2>Common watering mistakes</h2>
+<ul>
+<li><strong>Running the same minutes on every zone.</strong> Spray zones and rotor zones need very different times.</li>
+<li><strong>Watering on a timer through rainy weeks.</strong> A rain sensor or a quick check of the forecast saves water.</li>
+<li><strong>Ignoring runoff.</strong> Water flowing onto the sidewalk is water your lawn never got. Use shorter cycles.</li>
+<li><strong>Sprinklers that miss spots.</strong> Uneven catch-cup readings point to blocked nozzles, tilted heads or low pressure.</li>
+</ul>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://extension.illinois.edu/lawns/watering-your-lawn" rel="noopener" target="_blank">University of Illinois Extension: Watering your lawn</a></li>
+</ul>
+HTML,
+	);
+
+	/* 10 -------------------------------------------------------------- */
+	$p['spring_checklist'] = array(
+		'title'   => 'Spring Lawn Care Checklist: What to Do and When',
+		'slug'    => 'spring-lawn-care-checklist',
+		'excerpt' => 'A step-by-step spring checklist for cool-season lawns: cleanup, soil testing, crabgrass prevention timing, seeding, the first mowing and feeding.',
+		'tools'   => array( 'fertilizer', 'grass_seed', 'lime', 'sprinkler' ),
+		'publish' => '2026-11-03 09:00:00',
+		'content' => <<<'HTML'
+<p class="gl-lede">Spring is when lawns wake up, and a few well-timed jobs set the tone for the whole year. The trick is timing: some tasks reward patience, others punish it. Work through this checklist in order. It's written for cool-season lawns (fescue, bluegrass, ryegrass); notes for warm-season grass are at the end.</p>
+
+<h2>Early spring: as soon as the snow is gone</h2>
+<h3>☐ Rake and clean up</h3>
+<p>Rake off leaves and debris left over from winter. University of Missouri Extension notes that clearing leaves prevents turf damage and helps the soil warm up. Rake gently if the ground is soft; there's no need to tear at the grass.</p>
+
+<h3>☐ Get the mower ready</h3>
+<p>Sharpen the blade if you didn't last fall, check the battery or fuel, and make sure everything runs. A sharp blade cuts cleanly; a dull one shreds grass tips, which turn brown.</p>
+
+<h3>☐ Test your soil</h3>
+<p>University of Missouri Extension suggests testing if you haven't in the last five years. A test tells you whether you need lime, phosphorus or potassium, so you buy only what helps. See our guide to <a href="/how-to-read-soil-test/">reading a soil test</a>. If the test calls for lime, the <a href="/lawn-lime-calculator/">lawn lime calculator</a> turns the recommendation into bags and a safe schedule.</p>
+
+<h2>Mid-spring: when the forsythia blooms</h2>
+<h3>☐ Apply crabgrass preventer, if you need it</h3>
+<p>Pre-emergent crabgrass products work by stopping seeds from sprouting, so they must go down <em>before</em> crabgrass germinates, but not so early that they wear off. University of Missouri Extension sums it up as "be mellow until the forsythia turns yellow." Kansas State University points to a measurable signal: soil at about 55°F for several days. Warm spots next to driveways and sidewalks reach that temperature first.</p>
+<p><strong>The catch:</strong> most pre-emergents also stop grass seed from germinating. If you plan to seed this spring, don't use a standard crabgrass preventer on those areas; check the product label for how long to wait, or choose a product labeled as safe for seeding.</p>
+
+<h3>☐ Seed bare spots early, or wait for fall</h3>
+<p>Fall is the best time to seed cool-season grass. If you must seed in spring, do it early. University of Missouri Extension advises seeding bare spots in March where possible ("April is too late") and notes that spring seedings lose more seedlings than fall ones. Use our <a href="/grass-seed-calculator/">grass seed calculator</a> for the amount, and our guide to <a href="/how-to-water-new-grass-seed/">watering new seed</a> for aftercare.</p>
+
+<h2>Late spring: once the lawn is growing</h2>
+<h3>☐ Start mowing, and keep it high</h3>
+<p>Begin mowing when the grass needs it, and never remove more than one-third of the blade at a time. Keeping cool-season grass on the taller side shades the soil, helps hold moisture and crowds out weeds.</p>
+
+<h3>☐ Fertilize in late spring, not early</h3>
+<p>A heavy feeding the moment grass greens up pushes leafy growth at the expense of roots, right before summer heat. UConn's soil lab suggests timing lawn feedings around May and early September for cool-season grass. The <a href="/lawn-fertilizer-calculator/">lawn fertilizer calculator</a> turns a nitrogen rate into pounds of product for your bag and lawn, and our <a href="/when-to-fertilize-lawn/">fertilizing schedule</a> covers the whole year.</p>
+
+<h3>☐ Check your sprinklers before summer</h3>
+<p>Run each zone, look for broken heads, clogged nozzles and spray hitting the pavement, and do a catch-cup test to measure each zone's rate. Then set run times with the <a href="/sprinkler-run-time-calculator/">sprinkler run time calculator</a>. Our guide to <a href="/how-much-water-does-lawn-need/">how much water a lawn needs</a> explains the targets.</p>
+
+<h2>If you have a warm-season lawn</h2>
+<p>Bermuda, zoysia, St. Augustine and centipede wake up later. Hold off on fertilizing until the lawn has fully greened up, which is often late spring, then feed through summer. Late spring to early summer is also the best time to seed or sod warm-season grass. Crabgrass prevention timing is the same: before the soil warms to about 55°F.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://extension.missouri.edu/news/patience-is-lawn-owners-friend-in-march" rel="noopener" target="_blank">University of Missouri Extension: Patience is lawn owners' friend in March</a></li>
+<li><a href="https://www.k-state.edu/news/turf/articles/2017/03/methods-of-predicting-crabgrass-emergence.html" rel="noopener" target="_blank">Kansas State University: Methods of predicting crabgrass emergence</a></li>
+<li><a href="https://soiltesting-cahnr.media.uconn.edu/wp-content/uploads/sites/3514/2022/06/Lawns.pdf" rel="noopener" target="_blank">UConn Soil Nutrient Analysis Laboratory: Lawns</a></li>
+</ul>
+HTML,
+	);
+
+	/* 11 -------------------------------------------------------------- */
+	$p['gravel_path'] = array(
+		'title'   => 'How to Build a Gravel Path That Stays Put',
+		'slug'    => 'how-to-build-gravel-path',
+		'excerpt' => 'Plan, dig and build a gravel garden path: the right depth, a firm base, landscape fabric, edging and how much stone to order.',
+		'tools'   => array( 'gravel', 'paver_base' ),
+		'publish' => '2026-11-06 09:00:00',
+		'content' => <<<'HTML'
+<p class="gl-lede">A gravel path is one of the cheapest, quickest ways to add structure to a yard, and one of the easiest to get wrong. Without a firm base and solid edging, gravel spreads into the lawn, ruts underfoot and fills with weeds. Here's how to build one that stays put.</p>
+
+<h2>Plan the path</h2>
+<ul>
+<li><strong>Width:</strong> 3 to 4 feet is common for a garden path, per This Old House, and comfortable for one person with a wheelbarrow. Two people walking side by side need closer to 4 or 5 feet.</li>
+<li><strong>Route:</strong> lay out the edges with a garden hose or string and stakes, and walk it a few times before you dig. Gentle curves look natural; tight curves are harder to edge.</li>
+<li><strong>Drainage:</strong> avoid low spots where water collects, or give the path a slight slope so water runs off to one side.</li>
+<li><strong>Call before you dig:</strong> in the US, call 811 a few days ahead to have underground utility lines marked.</li>
+</ul>
+
+<h2>Choose your stone</h2>
+<ul>
+<li><strong>For the base:</strong> crushed stone with fines (often sold as stone pack, crusher run or road base). The mix of angular stone and stone dust locks together when compacted.</li>
+<li><strong>For the surface:</strong> angular crushed stone (such as ⅜ to ¾ inch) stays put and is easy to walk on. Round pea gravel looks softer but rolls underfoot and migrates more, so it needs a well-compacted base and good edging. Locally quarried stone is usually cheapest.</li>
+</ul>
+
+<h2>Step 1: Dig</h2>
+<p>This Old House recommends excavating about 4 inches deep, keeping the depth consistent so no low spots hold water. Remove sod, roots and loose soil, and tamp the bottom firm.</p>
+
+<h2>Step 2: Install edging</h2>
+<p>Edging is what keeps gravel out of the lawn and beds. Steel, aluminum, wood, brick or stone all work. Set the edging so its top sits slightly above the finished gravel; This Old House suggests filling gravel to about ½ inch below the top of the edging. A simple template, a board with notches cut 3 feet apart for a 3-foot path, keeps the two sides parallel as you go.</p>
+
+<h2>Step 3: Build a firm base</h2>
+<p>Spread the base stone in the trench, about 2½ inches deep in This Old House's method, rake it level, dampen it and tamp it firm with a hand tamper or plate compactor. This compacted layer is what stops the path from rutting.</p>
+
+<h2>Step 4: Add landscape fabric</h2>
+<p>A layer of landscape fabric over the base helps keep the surface stone from sinking into the base and slows weeds coming up from below. Overlap the seams and make relief cuts on curves so it lies flat. Note that weeds can still sprout in debris that builds up on top of the gravel, so occasional raking and hand-weeding are still part of the job.</p>
+
+<h2>Step 5: Spread the surface gravel</h2>
+<p>Fill with surface stone to just below the top of the edging, rake it smooth, and walk on it or tamp it lightly to settle it. Add a little more where it settles over the first few weeks.</p>
+
+<h2>How much stone to order</h2>
+<p>Multiply length × width × depth in inches, divide by 12 for cubic feet and by 27 for cubic yards. A 30-foot path 3 feet wide needs about 0.7 cubic yards of base for 2½ inches, and about 0.4 cubic yards of surface gravel for 1½ inches. The <a href="/gravel-calculator/">gravel calculator</a> works it out for several areas at once, converts to tons for your stone type, and compares buying by the ton, by the yard or in bags.</p>
+<p>Planning pavers instead of loose gravel? A paved walkway needs a deeper base and a layer of bedding sand; the <a href="/paver-base-calculator/">paver base calculator</a> covers that.</p>
+
+<h2>Keeping it looking good</h2>
+<ul>
+<li>Rake the surface now and then to level ruts and pull stray stone back from the edges.</li>
+<li>Blow or rake off leaves before they break down into soil that weeds love.</li>
+<li>Top up with a fresh inch of surface gravel every few years as it thins.</li>
+</ul>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.thisoldhouse.com/sidewalks/how-to-lay-a-budget-friendly-gravel-path" rel="noopener" target="_blank">This Old House: How to lay a budget-friendly gravel path</a></li>
+<li><a href="https://selectsg.com/how-much-does-a-yard-of-crushed-stone-weigh/" rel="noopener" target="_blank">Select Sand & Gravel: How much does a yard of crushed stone weigh?</a></li>
+</ul>
+HTML,
+	);
+
+	/* 12 -------------------------------------------------------------- */
+	$p['level_lawn'] = array(
+		'title'   => 'How to Level a Bumpy Lawn Without Killing the Grass',
+		'slug'    => 'how-to-level-bumpy-lawn',
+		'excerpt' => 'Fix low spots and bumps the right way: thin topdressing passes for shallow dips, lifting the sod for deep ones, and the best time of year to do it.',
+		'tools'   => array( 'topsoil', 'grass_seed' ),
+		'publish' => '2026-11-09 09:00:00',
+		'content' => <<<'HTML'
+<p class="gl-lede">Low spots and bumps make a lawn hard to mow, collect puddles and scalp easily. The fix is simple, but the most common mistake, dumping a thick layer of soil over the dip, smothers the very grass you're trying to level. Here's how to do it so the lawn grows straight through.</p>
+
+<h2>First, find out why it's bumpy</h2>
+<p>Leveling hides the symptom; it's worth checking the cause first:</p>
+<ul>
+<li><strong>Settling</strong> over old trenches, stumps or pipes is common and usually stops after a few years.</li>
+<li><strong>Burrowing animals</strong> or grubs can leave soft, uneven ground.</li>
+<li><strong>Water problems</strong> such as a leaking irrigation line or a downspout can wash soil away.</li>
+<li><strong>Frost heave and foot traffic</strong> create small, scattered bumps.</li>
+</ul>
+
+<h2>Measure the low spots</h2>
+<p>Lay a long, straight board across the dip and measure the gap under it at the deepest point. This tells you which method to use:</p>
+<ul>
+<li><strong>Up to about an inch deep:</strong> topdress in thin layers.</li>
+<li><strong>More than about an inch:</strong> lift the sod and fill underneath.</li>
+</ul>
+
+<h2>Method 1: Thin topdressing for shallow dips</h2>
+<p>Clemson Cooperative Extension recommends "light and frequent" topdressing with no more than ½ inch of material applied at a time; thicker layers can stunt the grass or shade it out. Georgia gardening expert Walter Reeves gives the same rule and suggests about four weeks between applications, so the grass grows up through each layer first.</p>
+<ol>
+<li><strong>Spread up to ½ inch</strong> of leveling mix over the low spot.</li>
+<li><strong>Work it in</strong> with the back of a rake or a push broom so it sifts down between the blades. Most of the grass should still be visible.</li>
+<li><strong>Water it in.</strong></li>
+<li><strong>Wait</strong> until the grass has grown through, usually three to four weeks in the growing season, then repeat if the spot is still low.</li>
+</ol>
+
+<h2>Method 2: Lift the sod for deep dips</h2>
+<p>For a dip deeper than about an inch, Walter Reeves recommends lifting the grass rather than burying it:</p>
+<ol>
+<li><strong>Cut an H or X</strong> through the turf across the low spot with a flat spade or edger.</li>
+<li><strong>Peel the sod back</strong> carefully, keeping as much soil on the roots as you can.</li>
+<li><strong>Fill underneath</strong> with soil, firming it as you go, until the surface sits level with the lawn around it once the sod is back. Fresh soil settles, so build it slightly high.</li>
+<li><strong>Lay the sod back down,</strong> press it firmly into contact with the soil, and water well. Keep it moist for the next couple of weeks while it re-roots.</li>
+</ol>
+<p>For bumps, do the reverse: lift the sod, scrape out soil until the area is level, and lay the sod back.</p>
+
+<h2>What to use</h2>
+<ul>
+<li><strong>Match your soil.</strong> Clemson Extension advises using sand only if your native soil is sandy; otherwise use a screened topsoil similar to what you have. Walter Reeves warns that pure sand on top of clay can worsen drainage and make grass more prone to drought. A 50/50 mix of sand and topsoil is a common leveling mix on loam soils.</li>
+<li><strong>Buy clean material.</strong> Topsoil and river sand can carry weed seeds, so buy from a reputable supplier.</li>
+</ul>
+<p>The <a href="/topsoil-calculator/">topsoil calculator</a> works out how much you need for several low spots at once and splits the total into safe ½-inch passes.</p>
+
+<h2>When to level</h2>
+<p>Level while the grass is actively growing, so it recovers quickly. Walter Reeves suggests fall for fescue (ideally just before you overseed) and around May for warm-season grasses such as bermuda, zoysia, centipede and St. Augustine. If the leveled areas are thin, overseed them; see our <a href="/how-to-overseed-lawn/">overseeding guide</a> and the <a href="/grass-seed-calculator/">grass seed calculator</a>.</p>
+
+<h2>What about lawn rollers?</h2>
+<p>Rolling can press down small bumps after frost heave, but a heavy roller compacts the soil, which squeezes out air and water that roots need. It won't fix real low spots, and it can make compaction problems worse, especially on clay or wet soil. Topdressing or lifting the sod are better fixes for most lawns.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://hgic.clemson.edu/factsheet/topdressing-a-home-lawn/" rel="noopener" target="_blank">Clemson Cooperative Extension: Topdressing a home lawn</a></li>
+<li><a href="https://www.walterreeves.com/lawn-care/lawn-leveling/" rel="noopener" target="_blank">Walter Reeves: Lawn leveling</a></li>
+</ul>
+HTML,
+	);
+
 	return $p;
 }
 
@@ -542,7 +776,8 @@ function gl_tools_sync_posts() {
 			'post_content'   => $content,
 			'post_excerpt'   => $def['excerpt'],
 			// Published now, a minute apart, so the list order follows this file's order (newest last).
-			'post_date'      => gmdate( 'Y-m-d H:i:s', current_time( 'timestamp' ) - ( 60 * ( count( gl_tools_post_definitions() ) - $n + 1 ) ) ),
+			// A 'publish' date (site time) schedules the guide: WordPress publishes it automatically then.
+			'post_date'      => ! empty( $def['publish'] ) ? $def['publish'] : gmdate( 'Y-m-d H:i:s', current_time( 'timestamp' ) - ( 60 * ( count( gl_tools_post_definitions() ) - $n + 1 ) ) ),
 			'post_category'  => array( $cat_id ),
 			'comment_status' => 'closed',
 			'ping_status'    => 'closed',
@@ -555,6 +790,32 @@ function gl_tools_sync_posts() {
 	}
 	update_option( 'gl_tools_posts', $ids );
 	update_option( 'gl_tools_post_hashes', $hashes );
+}
+
+/**
+ * Safety net for scheduled guides: with page caching, WP-Cron can miss a scheduled time.
+ * On any uncached request, publish our guides whose scheduled time has passed (checked at most every 10 minutes).
+ */
+add_action( 'init', 'gl_tools_publish_overdue_guides', 30 );
+function gl_tools_publish_overdue_guides() {
+	if ( get_transient( 'gl_tools_overdue_check' ) ) {
+		return;
+	}
+	set_transient( 'gl_tools_overdue_check', 1, 10 * MINUTE_IN_SECONDS );
+	$ids = array_values( (array) get_option( 'gl_tools_posts', array() ) );
+	if ( ! $ids ) {
+		return;
+	}
+	$overdue = get_posts( array(
+		'post_type'      => 'post',
+		'post_status'    => 'future',
+		'post__in'       => $ids,
+		'posts_per_page' => 20,
+		'date_query'     => array( array( 'before' => current_time( 'mysql' ), 'inclusive' => true ) ),
+	) );
+	foreach ( $overdue as $post ) {
+		wp_publish_post( $post->ID );
+	}
 }
 
 /** Guides that mention a given tool key, newest first. */
