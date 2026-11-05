@@ -32,3 +32,4 @@ Started: **Thursday, October 22, 2026**
 - 2026-10-31: Search Console: sitemap resubmitted. URL Inspection shows all 12 tool pages are on Google. Re-indexing requested for 11 (all but Sprinkler; daily quota hit). Follow-up scheduled Nov 1 for Sprinkler + guides.
 - 2026-11-01: Search Console follow-up (Sprinkler + guides) not done: Chrome unreachable at 10:00 and 19:00 PKT. Waiting on the user.
 - 2026-11-02: Search Console: indexing requested for Sprinkler, Gravel, Grass Seed and 8 guides (all already on Google). When to Fertilize hit the daily quota; it is already indexed.
+- 2026-11-03: Spring lawn care checklist (id 59) published on schedule with its featured illustration (checked in WordPress; live-page view skipped, Chrome unreachable).
