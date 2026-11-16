@@ -83,13 +83,19 @@ function gl_tools_document_title( $parts ) {
  * The default author archive is a thin duplicate and its URL shows the login name.
  * ------------------------------------------------------------- */
 add_filter( 'wp_sitemaps_add_provider', function ( $provider, $name ) {
-	return 'users' === $name ? false : $provider;
+	return in_array( $name, array( 'users', 'taxonomies' ), true ) ? false : $provider; // category archive redirects to the Guides page
 }, 10, 2 );
 
 add_action( 'template_redirect', function () {
 	if ( is_author() ) {
 		$about = get_page_by_path( 'about' );
 		wp_safe_redirect( $about ? get_permalink( $about ) : home_url( '/' ), 301 );
+		exit;
+	}
+	// The "Guides" category archive duplicates the Guides page; send it there.
+	$guides_page = (int) get_option( 'page_for_posts' );
+	if ( $guides_page && is_category( 'guides' ) && ! is_paged() ) {
+		wp_safe_redirect( get_permalink( $guides_page ), 301 );
 		exit;
 	}
 } );
