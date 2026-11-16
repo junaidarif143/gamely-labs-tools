@@ -33,3 +33,4 @@ Started: **Thursday, October 22, 2026**
 - 2026-11-01: Search Console follow-up (Sprinkler + guides) not done: Chrome unreachable at 10:00 and 19:00 PKT. Waiting on the user.
 - 2026-11-02: Search Console: indexing requested for Sprinkler, Gravel, Grass Seed and 8 guides (all already on Google). When to Fertilize hit the daily quota; it is already indexed.
 - 2026-11-03: Spring lawn care checklist (id 59) published on schedule with its featured illustration (checked in WordPress; live-page view skipped, Chrome unreachable).
+- 2026-11-15: Nov 9 check-in. Gravel path (Nov 6) and Level a bumpy lawn (Nov 9) guides published: 12 tools + 12 guides live. Search Console (28 days to Nov 13): 206 impressions, 0 clicks, avg position 63, 65 queries. Index report: 30 indexed; not indexed are only feeds/scripts and WordPress speculation-rule patterns (harmless). Ready for AdSense application; ads.txt to add once the publisher ID is known.
