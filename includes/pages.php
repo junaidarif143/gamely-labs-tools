@@ -1114,14 +1114,18 @@ HTML;
 	 * Privacy policy
 	 * ------------------------------------------------------------- */
 	$privacy = <<<'HTML'
-<p class="gl-lede">This policy explains what information Gamely Labs collects when you use gamelylabs.com, how it is used, and the choices you have.</p>
-<p><strong>Effective date:</strong> October 22, 2026</p>
+<p class="gl-lede">This policy explains what information Gamely Labs collects when you use gamelylabs.com or the Gamely Labs app, how it is used, and the choices you have.</p>
+<p><strong>Effective date:</strong> October 22, 2026. <strong>Last updated:</strong> November 16, 2026.</p>
 
 <h2>Who we are</h2>
 <p>Gamely Labs (gamelylabs.com) is owned and operated by AJ Tech Studio. In this policy, "we", "us" and "our" refer to Gamely Labs and AJ Tech Studio. You can contact us at <a href="mailto:info@ajtechstudio.com">info@ajtechstudio.com</a>.</p>
 
 <h2>Information you enter into our calculators</h2>
 <p>The numbers you type into our calculators, such as lawn areas, bed sizes or product details, are processed in your own browser. They are not sent to our servers. To save you retyping, each calculator may store your most recent inputs in your browser's local storage on your device. You can clear them at any time with the calculator's "Start over" button or by clearing your browser's site data.</p>
+<p>So the calculators keep working without a connection, your browser may also save copies of our pages and files on your device. These copies contain only our own content, never your inputs, and are refreshed or removed automatically.</p>
+
+<h2>The Gamely Labs app</h2>
+<p>The Gamely Labs app for Android opens gamelylabs.com in a full-screen window, so it works exactly like the website and this policy applies to it in full. The app doesn't ask you to create an account, doesn't request access to your contacts, camera, microphone, photos or precise location, and doesn't collect any personal information of its own. Your calculator inputs and offline copies are stored only on your device, in the browser storage for gamelylabs.com; you can remove them with "Start over" or by clearing the site's data in your browser settings. The app shows the same Google ads as the website, described below.</p>
 
 <h2>Information collected automatically</h2>
 <p>Like most websites, our hosting provider's servers automatically record basic technical information when you visit, such as your IP address, browser type, the pages requested and the date and time. These logs are used to keep the site secure and working properly and are kept only as long as needed for that purpose.</p>
