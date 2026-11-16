@@ -118,5 +118,35 @@
   "title": "Two ways to level a lawn",
   "alt": "Two methods: for shallow dips, topdress with up to half an inch of leveling mix at a time and let the grass grow through; for dips deeper than about an inch, cut and lift the sod, fill underneath with soil, and lay it back.",
   "caption": "Shallow dips: topdress no more than ½ in at a time and let the grass grow through before repeating. Dips deeper than about 1 in: lift the sod, fill beneath it, and relay it."
+ },
+ "how-many-rolls-of-sod-on-a-pallet": {
+  "title": "What's on a pallet of sod",
+  "alt": "Comparison of three sod pallet types: 16 by 24 inch slabs at about 2.67 square feet each on 400 to 500 square foot pallets, mini rolls of 5 square feet in 80 to 100 roll pallets, and large 10 square foot rolls on 500 to 700 square foot pallets.",
+  "caption": "Pallets usually cover about 400 to 700 sq ft (Sod Solutions). Slabs are about 2.67 sq ft each, mini rolls 5 sq ft and big rolls 10 sq ft, so ask your supplier for the square feet on their pallet."
+ },
+ "how-many-cubic-feet-in-a-50-lb-bag-of-gravel": {
+  "title": "One 50 lb bag ≈ ½ cubic foot",
+  "alt": "A 50 pound bag of gravel holds about half a cubic foot, which covers about 3 square feet at 2 inches deep or 2 square feet at 3 inches; 54 bags make a cubic yard and 40 bags make a ton.",
+  "caption": "A 50 lb bag of gravel is about 0.5 cu ft: 3 sq ft at 2 in deep, 2 sq ft at 3 in. It takes 54 bags to make a cubic yard and 40 to make a ton."
+ },
+ "how-many-bags-of-mulch-in-a-yard": {
+  "title": "A cubic yard of mulch in bags",
+  "alt": "One cubic yard of mulch equals 27 cubic feet: 13.5 bags of 2 cubic feet, so 14 to buy, or 9 bags of 3 cubic feet. A yard covers about 162 square feet at 2 inches deep or 108 square feet at 3 inches.",
+  "caption": "1 cubic yard = 27 cu ft = 13.5 bags of 2 cu ft (buy 14) or 9 bags of 3 cu ft. It covers about 162 sq ft at 2 in deep, or 108 sq ft at 3 in."
+ },
+ "fall-raised-bed-prep": {
+  "title": "Putting a raised bed to bed",
+  "alt": "Before and after a raised bed is prepared for winter: on the left, spent and diseased plants and sunken soil; on the right, cleared beds topped up with compost and planted with an oat and pea cover crop.",
+  "caption": "Clear spent plants (diseased ones out of the compost), top up settled soil with compost, and sow a cover crop such as oats and peas or keep the soil covered over winter."
+ },
+ "winter-lawn-care": {
+  "title": "Winter lawn care at a glance",
+  "alt": "Winter lawn care tips: make the last mowing short, clear leaves, stay off frozen grass, shovel first and use de-icing salt sparingly, about 12 ounces per 1,000 square feet, and leave seeding until spring.",
+  "caption": "Short last mowing, leaves cleared, no walking on frozen grass, and salt used sparingly (about 12 oz per 1,000 sq ft, per University of Minnesota Extension). Seeding waits until spring."
+ },
+ "concrete-calculator": {
+  "title": "Slab volume to bags",
+  "alt": "Cross-section of a 4 inch concrete patio slab over 4 inches of compacted gravel, with the formula: a 10 by 12 foot patio at 4 inches is 40 cubic feet, 44 with 10 percent extra, which is 1.63 cubic yards or 74 bags of 80 pounds.",
+  "caption": "A 10 × 12 ft patio poured 4 in thick is 40 cu ft; with 10% extra that's 44 cu ft (1.63 cu yd), or 74 bags of 80 lb at about 0.60 cu ft per bag."
  }
 }

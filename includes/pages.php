@@ -956,6 +956,86 @@ HTML;
 	);
 
 	/* ---------------------------------------------------------------
+	 * Concrete calculator (scheduled: goes live 2026-12-03)
+	 * ------------------------------------------------------------- */
+	$concrete_faq = array(
+		'How many bags of concrete are in a cubic yard?'       => 'A cubic yard is 27 cubic feet. QUIKRETE lists its Concrete Mix at about 0.60 cubic feet per 80 lb bag, 0.45 per 60 lb bag and 0.30 per 40 lb bag, so a cubic yard takes about 45 bags of 80 lb, 60 bags of 60 lb or 90 bags of 40 lb.',
+		'How many 80 lb bags of concrete do I need for a 10×10 slab?' => 'At 4 inches thick, a 10 by 10 foot slab is 100 × 4 ÷ 12 = 33.3 cubic feet. At 0.60 cubic feet per 80 lb bag that is 56 bags, or 62 bags with 10% extra. At that size, also price a ready-mix delivery of about 1½ cubic yards.',
+		'How thick should a concrete patio be?'                => 'Patios and walkways are commonly poured about 4 inches thick. QUIKRETE’s patio instructions use 2×4 forms, which give a 3½ inch slab, over a 4 inch compacted gravel base. Driveways and slabs carrying heavy loads are usually thicker; check local requirements.',
+		'How much concrete do I need for a fence post?'         => 'It depends on the hole. QUIKRETE recommends a hole three times the width of the post, with 6 inches of gravel in the bottom. A 10 inch hole for a 4×4 post with 24 inches of concrete takes about 0.9 cubic feet, roughly 1½ bags of 80 lb.',
+		'Should I order extra concrete?'                        => 'Yes. Add about 5 to 10% for spills, an uneven base and forms that bow slightly. Running short partway through a pour is much worse than having a bag or two left over.',
+		'Is it cheaper to buy bags or ready-mix concrete?'      => 'For small jobs such as post holes, steps and small pads, bags are usually cheaper and easier. Around a cubic yard or more, ready-mix delivery is often worth pricing, although many suppliers add a fee for small loads. Enter both prices in the calculator to compare.',
+	);
+	$concrete_content = <<<'HTML'
+<p class="gl-lede">Work out how much concrete you need in cubic yards and in 40, 60 or 80 lb bags. Measure your slab, patio or walkway, or enter your fence post holes, and compare bagged concrete with a ready-mix delivery.</p>
+
+[gl_concrete]
+
+<h2>How to use this calculator</h2>
+<ol>
+<li><strong>Choose the project:</strong> a slab (patio, walkway, shed or hot tub pad) or post holes.</li>
+<li><strong>For a slab,</strong> add each area as a rectangle, a circle or a known number of square feet, then choose the thickness and the extra to allow.</li>
+<li><strong>For post holes,</strong> enter the number of posts, the post size, and the hole diameter and depth. The calculator subtracts the gravel layer and the post itself.</li>
+<li><strong>Optional: enter prices</strong> for an 80 lb bag and for a cubic yard of ready-mix to compare.</li>
+</ol>
+
+<h2>The formulas</h2>
+<ul>
+<li><strong>Slab volume (cu ft)</strong> = area (sq ft) × thickness (in) ÷ 12, plus extra</li>
+<li><strong>Post hole volume (cu ft)</strong> = (π × radius² − post area) × concrete depth, all in inches, ÷ 1,728</li>
+<li><strong>Cubic yards</strong> = cubic feet ÷ 27</li>
+<li><strong>Bags</strong> = cubic feet ÷ bag yield (0.60 for 80 lb, 0.45 for 60 lb, 0.30 for 40 lb), rounded up</li>
+</ul>
+
+<h2>Worked example: a 10 × 12 ft patio</h2>
+<ul>
+<li>Area: 10 × 12 = <strong>120 sq ft</strong></li>
+<li>Volume at 4 inches: 120 × 4 ÷ 12 = 40 cu ft, plus 10% = <strong>44 cubic feet</strong>, about <strong>1.63 cubic yards</strong></li>
+<li>In 80 lb bags: 44 ÷ 0.60 = 73.3, so <strong>74 bags</strong></li>
+<li>That is roughly 3 tons of bags to lift and mix by hand, so at this size it is worth pricing ready-mix as well.</li>
+</ul>
+
+<h2>Bag yields</h2>
+<table class="gl-table">
+<thead><tr><th>Bag size</th><th>Yield per bag</th><th>Bags per cubic yard</th></tr></thead>
+<tbody>
+<tr><td>80 lb</td><td>About 0.60 cu ft</td><td>45</td></tr>
+<tr><td>60 lb</td><td>About 0.45 cu ft</td><td>60</td></tr>
+<tr><td>40 lb</td><td>About 0.30 cu ft</td><td>90</td></tr>
+</tbody>
+</table>
+<p>Yields are from the QUIKRETE Concrete Mix data sheet. Other brands of standard concrete mix are similar, but check the yield printed on the bag you buy.</p>
+
+<h2>Thickness and base</h2>
+<ul>
+<li><strong>Patios and walkways:</strong> about 4 inches. QUIKRETE’s patio method uses 2×4 forms for a 3½ inch slab, over compactible gravel laid about 5 inches deep and tamped to 4 inches, extending at least 6 inches past the slab.</li>
+<li><strong>Drainage:</strong> slope the slab about ⅛ inch per foot away from the house.</li>
+<li><strong>Control joints:</strong> QUIKRETE notes that patios larger than 10 × 10 feet need control joints to manage cracking.</li>
+<li><strong>Driveways and heavy loads:</strong> thicker slabs, often with reinforcement. Local codes may set the minimum, so check before you pour.</li>
+</ul>
+
+<h2>Setting posts</h2>
+<p>QUIKRETE recommends a hole about three times the width of the post, dug to a depth of one-third to one-half of the post’s above-ground height, plus 6 inches for a layer of gravel in the bottom. For a 4×4 post (3½ inches wide), that means a hole of about 10 to 12 inches across.</p>
+<p>Building a patio from pavers instead? Our <a href="/paver-base-calculator/">paver base calculator</a> works out the base gravel, bedding sand and digging depth, and the <a href="/gravel-calculator/">gravel calculator</a> covers the stone under a slab.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.quikrete.com/PDFs/DATA_SHEET-Concrete%20Mix%201101.pdf" rel="noopener" target="_blank">QUIKRETE: Concrete Mix (No. 1101) data sheet</a></li>
+<li><a href="https://quikrete.com/athome/patio.asp" rel="noopener" target="_blank">QUIKRETE: How to build a concrete patio</a></li>
+<li><a href="https://quikrete.com/athome/SettingPosts.asp" rel="noopener" target="_blank">QUIKRETE: Setting posts in concrete</a></li>
+</ul>
+HTML;
+	$defs['concrete'] = array(
+		'title'   => 'Concrete Calculator',
+		'slug'    => 'concrete-calculator',
+		'excerpt' => 'How many bags of concrete do I need? Cubic yards and 40, 60 or 80 lb bags for slabs, patios, walkways and fence posts, with bags vs ready-mix cost.',
+		'content' => $concrete_content . "\n" . gl_tools_faq_html( $concrete_faq ),
+		'faq'     => $concrete_faq,
+		'order'   => 13,
+		'publish' => '2026-12-03 09:00:00',
+	);
+
+	/* ---------------------------------------------------------------
 	 * About
 	 * ------------------------------------------------------------- */
 	$about = <<<'HTML'

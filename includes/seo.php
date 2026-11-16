@@ -23,9 +23,10 @@ function gl_tools_seo_map() {
 		'grass_seed' => array( 'title' => 'Grass Seed Calculator: Pounds per 1,000 sq ft & per Acre', 'related' => array( 'sprinkler', 'topsoil', 'fertilizer' ) ),
 		'compost'    => array( 'title' => 'Compost Calculator: How Much Compost Do I Need?', 'related' => array( 'raised_bed', 'topsoil', 'mulch' ) ),
 		'mulch'      => array( 'title' => 'Mulch Calculator: How Much Mulch Do I Need? (Bags & Yards)', 'related' => array( 'compost', 'raised_bed', 'gravel' ) ),
-		'gravel'     => array( 'title' => 'Gravel Calculator: How Much Gravel Do I Need? (Tons & Yards)', 'related' => array( 'paver_base', 'topsoil', 'mulch' ) ),
+		'gravel'     => array( 'title' => 'Gravel Calculator: How Much Gravel Do I Need? (Tons & Yards)', 'related' => array( 'paver_base', 'concrete', 'topsoil', 'mulch' ) ),
 		'topsoil'    => array( 'title' => 'Topsoil Calculator: How Much Topsoil Do I Need?', 'related' => array( 'sod', 'grass_seed', 'compost' ) ),
-		'paver_base' => array( 'title' => 'Paver Base Calculator: Gravel, Sand & Dig Depth', 'related' => array( 'gravel', 'topsoil', 'mulch' ) ),
+		'paver_base' => array( 'title' => 'Paver Base Calculator: Gravel, Sand & Dig Depth', 'related' => array( 'gravel', 'concrete', 'topsoil' ) ),
+		'concrete'   => array( 'title' => 'Concrete Calculator: How Many Bags of Concrete Do I Need?', 'related' => array( 'paver_base', 'gravel', 'topsoil' ) ),
 	);
 }
 

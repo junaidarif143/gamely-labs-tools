@@ -37,3 +37,10 @@ Started: **Thursday, October 22, 2026**
 - 2026-11-15: AdSense readiness audit (logged-out crawl in Chrome): all 31 sitemap URLs 200, one H1 each, meta descriptions, no broken internal links, all calculators compute, no mobile overflow, privacy policy has the required Google/third-party cookie disclosures. Fixed: Guides category archive (duplicate of /guides/) now 301s to /guides/ and is out of the sitemap; Guides link added to footer (plugin 1.10.1, theme 1.5.1).
 - 2026-11-16: v1.11.0: installable web app (step toward a Play Store app). /manifest.webmanifest, /sw.js (network-first pages, offline copies of home, guides and all 12 calculators, never caches logged-in pages or third-party/ad requests), /gl-offline.html fallback, app icons, 'Install the app' footer button where the browser supports it.
 - 2026-11-16: AdSense application submitted by the user (publisher ca-pub-3391763778564662). v1.12.0 adds the google-adsense-account meta tag, the AdSense script (Auto ads) in <head>, and /ads.txt.
+- 2026-11-16: v1.13.0: publishing schedule during the AdSense review (all written, illustrated and scheduled; tools can now carry a 'publish' date and stay hidden until then):
+  - Nov 17: How many rolls of sod are on a pallet?
+  - Nov 19: How many cubic feet is a 50 lb bag of gravel?
+  - Nov 23: How many bags of mulch are in a yard?
+  - Nov 25: Fall raised bed prep
+  - Nov 30: Winter lawn care
+  - Dec 3: Concrete Calculator (tool #13: slabs and post holes, 40/60/80 lb bags, ready-mix comparison)

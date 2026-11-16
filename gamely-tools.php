@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Gamely Labs Tools
  * Description:       Lawn, garden and yard calculators for Gamely Labs. Each tool is a shortcode; on activation or upgrade the plugin creates the tool pages and the homepage.
- * Version:           1.12.0
+ * Version:           1.13.0
  * Update URI:        false
  * Requires at least: 6.0
  * Requires PHP:      7.4
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'GL_TOOLS_VERSION', '1.12.0' );
+define( 'GL_TOOLS_VERSION', '1.13.0' );
 define( 'GL_TOOLS_AUTHOR', 'Junaid Arif' );
 define( 'GL_TOOLS_OWNER', 'AJ Tech Studio' );
 define( 'GL_TOOLS_EMAIL', 'info@ajtechstudio.com' );
@@ -34,7 +34,19 @@ require_once GL_TOOLS_DIR . 'includes/ads.php';
  * Public catalog of tools, used by the Gamely theme for menus, cards and related tools.
  * icon = a name the theme knows; tint/ink = the tool's soft background and icon colour.
  */
+/**
+ * Tools that are live now. A tool with a 'publish' date (site time) stays hidden from menus,
+ * cards, related tools and the offline app until that date; its page is created as scheduled.
+ */
 function gl_tools_catalog() {
+	static $now = null;
+	$now = null === $now ? current_time( 'mysql' ) : $now;
+	return array_filter( gl_tools_catalog_all(), function ( $t ) use ( $now ) {
+		return empty( $t['publish'] ) || $t['publish'] <= $now;
+	} );
+}
+
+function gl_tools_catalog_all() {
 	return array(
 		'sprinkler'  => array( 'title' => 'Sprinkler Run Time Calculator', 'short' => 'Sprinkler Run Time', 'slug' => 'sprinkler-run-time-calculator', 'cat' => 'lawn', 'icon' => 'drop', 'tint' => '#DCE8F0', 'ink' => '#2E5E7E', 'blurb' => 'Minutes per zone, cycle-and-soak and gallons used, from your weekly target and rainfall.', 'cta' => 'Open calculator' ),
 		'fertilizer' => array( 'title' => 'Lawn Fertilizer Calculator', 'short' => 'Lawn Fertilizer', 'slug' => 'lawn-fertilizer-calculator', 'cat' => 'lawn', 'icon' => 'sack', 'tint' => '#E5EDD6', 'ink' => '#4E6E30', 'blurb' => 'Pounds and bags for any N-P-K on the shelf, plus a yearly feeding plan for your grass.', 'cta' => 'Open calculator' ),
@@ -48,6 +60,7 @@ function gl_tools_catalog() {
 		'mulch'      => array( 'title' => 'Mulch Calculator', 'short' => 'Mulch', 'slug' => 'mulch-calculator', 'cat' => 'garden', 'icon' => 'mulch', 'tint' => '#F1E4D3', 'ink' => '#8A5E3B', 'blurb' => 'Bags or yards for every bed and tree ring at once, with top-up depth and bagged vs bulk cost.', 'cta' => 'Open calculator', 'svg' => '<path d="M3 19h18"/><path d="M5 19c1-4 3-6 7-6s6 2 7 6"/><path d="M9 13l1-2M13 13l1-3M16 14l1.5-1.5"/>' ),
 		'gravel'     => array( 'title' => 'Gravel Calculator', 'short' => 'Gravel', 'slug' => 'gravel-calculator', 'cat' => 'yard', 'icon' => 'gravel', 'tint' => '#E6E2DA', 'ink' => '#55524B', 'blurb' => 'Tons, cubic yards and bags of stone for paths, patios and driveways, with by-the-ton vs by-the-yard cost.', 'cta' => 'Open calculator', 'svg' => '<circle cx="6" cy="16" r="2.5"/><circle cx="12.5" cy="17" r="3"/><circle cx="18.5" cy="15.5" r="2.5"/><circle cx="9" cy="10.5" r="2.2"/><circle cx="15.5" cy="10" r="2.2"/>' ),
 		'topsoil'    => array( 'title' => 'Topsoil Calculator', 'short' => 'Topsoil', 'slug' => 'topsoil-calculator', 'cat' => 'yard', 'icon' => 'topsoil', 'tint' => '#EADFCF', 'ink' => '#6B4A2F', 'blurb' => 'Topsoil for leveling lawn low spots in safe ½-inch passes, new lawns or filling areas, in yards and bags.', 'cta' => 'Open calculator', 'svg' => '<path d="M3 18h18"/><path d="M3 14c3-2 5-2 8 0s6 2 10 0"/><path d="M12 4v6M9 7l3 3 3-3"/>' ),
+		'concrete'   => array( 'title' => 'Concrete Calculator', 'short' => 'Concrete', 'slug' => 'concrete-calculator', 'cat' => 'yard', 'icon' => 'concrete', 'tint' => '#E3E1DC', 'ink' => '#4A473F', 'blurb' => 'Cubic yards and 40, 60 or 80 lb bags for slabs, patios, walkways and fence post holes, with bagged vs ready-mix cost.', 'cta' => 'Open calculator', 'publish' => '2026-12-03 09:00:00', 'svg' => '<path d="M3 17l4-4h14l-4 4z"/><path d="M3 17v3h14v-3"/><path d="M17 20l4-4v-3"/><path d="M9 4h6l-1 5h-4z"/><path d="M12 9v3"/>' ),
 		'paver_base' => array( 'title' => 'Paver Base Calculator', 'short' => 'Paver Base', 'slug' => 'paver-base-calculator', 'cat' => 'yard', 'icon' => 'paver', 'tint' => '#E1E7EC', 'ink' => '#3F5566', 'blurb' => 'Base gravel, bedding sand and digging depth for patios, walkways and driveways, with the base widened past the edges.', 'cta' => 'Open calculator', 'svg' => '<rect x="3" y="4" width="8" height="5" rx="1"/><rect x="13" y="4" width="8" height="5" rx="1"/><rect x="7" y="11" width="10" height="5" rx="1"/><path d="M3 20h18"/>' ),
 	);
 }
@@ -98,6 +111,7 @@ function gl_tools_registry() {
 		'gl_gravel'      => array( 'script' => 'gl-gravel', 'file' => 'assets/gravel.js', 'deps' => array( 'gl-common' ) ),
 		'gl_topsoil'     => array( 'script' => 'gl-topsoil', 'file' => 'assets/topsoil.js', 'deps' => array( 'gl-common' ) ),
 		'gl_paver_base'  => array( 'script' => 'gl-paver-base', 'file' => 'assets/paver-base.js', 'deps' => array( 'gl-common' ) ),
+		'gl_concrete'    => array( 'script' => 'gl-concrete', 'file' => 'assets/concrete.js', 'deps' => array( 'gl-common' ) ),
 	);
 }
 
@@ -203,10 +217,12 @@ function gl_tools_sync_pages() {
 			continue;
 		}
 
+		$future = ! empty( $def['publish'] ) && $def['publish'] > current_time( 'mysql' );
 		$id = wp_insert_post(
 			array(
 				'post_type'      => 'page',
-				'post_status'    => 'publish',
+				'post_status'    => $future ? 'future' : 'publish',
+				'post_date'      => $future ? $def['publish'] : current_time( 'mysql' ),
 				'post_title'     => $def['title'],
 				'post_name'      => $def['slug'],
 				'post_content'   => $content,

@@ -711,6 +711,285 @@ HTML,
 HTML,
 	);
 
+	/* 13 -------------------------------------------------------------- */
+	$p['sod_pallet'] = array(
+		'title'   => 'How Many Rolls of Sod Are on a Pallet? Coverage by Piece Size',
+		'slug'    => 'how-many-rolls-of-sod-on-a-pallet',
+		'excerpt' => 'A pallet of sod usually covers 400 to 700 sq ft. See how many slabs or rolls are on a pallet, how much one weighs, and how many pallets your lawn needs.',
+		'tools'   => array( 'sod', 'topsoil' ),
+		'publish' => '2026-11-17 09:00:00',
+		'content' => <<<'HTML'
+<p class="gl-lede">Sod is sold by the pallet, but a "pallet" isn't a fixed amount. Depending on the farm and the size of the pieces, one pallet covers anywhere from about 400 to 700 square feet. Here's how to tell what you're getting and how many pallets to order.</p>
+
+<h2>The short answer</h2>
+<p>According to turfgrass company Sod Solutions, pallets generally cover <strong>about 400 to 700 square feet</strong>, depending on the farm's harvesting and stacking methods and on shipping limits. What changes is the size of the pieces on the pallet:</p>
+<table class="gl-table">
+<thead><tr><th>Piece type</th><th>Size</th><th>Covers per piece</th><th>Typical pallet</th></tr></thead>
+<tbody>
+<tr><td>Slabs (common in the South)</td><td>16 × 24 in</td><td>About 2.67 sq ft</td><td>400, 450 or 500 sq ft (about 150 to 190 slabs)</td></tr>
+<tr><td>Mini hand rolls</td><td>40 × 18 in</td><td>5 sq ft</td><td>80, 90 or 100 rolls (400 to 500 sq ft)</td></tr>
+<tr><td>Large rolls (common in the North)</td><td>60 × 24 or 80 × 18 in</td><td>10 sq ft</td><td>500, 600 or 700 sq ft (50 to 70 rolls)</td></tr>
+</tbody>
+</table>
+<p>Slab counts are worked out from the pallet size: a 450 sq ft pallet of 16 × 24 inch slabs holds about 450 ÷ 2.67 ≈ 169 pieces.</p>
+
+<h2>Always ask the supplier</h2>
+<p>Because farms stack differently, the only figure that matters is your supplier's. When you call, ask:</p>
+<ul>
+<li><strong>How many square feet are on one pallet?</strong> Compare prices per square foot, not per pallet. Sod Solutions makes the same point for tall fescue and Kentucky bluegrass, where pallet sizes vary most.</li>
+<li><strong>Slabs or rolls, and what size?</strong> Big rolls go down faster but are heavy to carry; slabs are easier to handle around curves.</li>
+<li><strong>Is delivery included, and can they drop it close to where you'll lay it?</strong></li>
+</ul>
+
+<h2>How much does a pallet of sod weigh?</h2>
+<p>Sod Solutions puts a typical pallet at <strong>about 1,500 to 3,000 pounds</strong>, and up to 50% heavier when the sod is wet. That's too heavy for most pickup beds and far too heavy to move by hand, so plan for delivery and have the pallets placed on a driveway or firm ground near the work area.</p>
+
+<h2>How many pallets do you need?</h2>
+<ol>
+<li><strong>Measure the area</strong> in square feet. Split odd shapes into rectangles and circles and add them up.</li>
+<li><strong>Add extra for cuts.</strong> About 5% for a simple rectangle, more for curves, beds and lots of edges.</li>
+<li><strong>Divide by the pallet size</strong> your supplier quotes, and round up.</li>
+</ol>
+<p><strong>Example:</strong> a 30 × 40 ft backyard is 1,200 sq ft. With 5% extra that's 1,260 sq ft. On 450 sq ft pallets you need 1,260 ÷ 450 = 2.8, so <strong>3 pallets</strong>. On 500 sq ft pallets it's 2.52, still 3 pallets, with a bit more left over.</p>
+<p>The <a href="/sod-calculator/">sod calculator</a> does this for several areas at once, for slabs or rolls, and can show an exact partial pallet if your supplier sells by the piece.</p>
+
+<h2>Don't let it sit on the pallet</h2>
+<p>Sod is a living crop, and the pieces in the middle of a stack heat up quickly, especially in warm weather. Have the ground prepared before delivery and plan to lay it the same day. If some must wait, keep it shaded and lightly moist. Our guide to <a href="/how-to-lay-sod/">laying sod</a> covers the preparation and the first weeks of watering.</p>
+
+<h2>Preparing the ground</h2>
+<p>New sod needs good soil underneath. If the ground is poor or uneven, the <a href="/topsoil-calculator/">topsoil calculator</a> works out how much to bring in before the sod arrives.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://sodsolutions.com/sod-university/square-feet-per-pallet/" rel="noopener" target="_blank">Sod Solutions: How many square feet are in a pallet of sod?</a></li>
+</ul>
+HTML,
+	);
+
+	/* 14 -------------------------------------------------------------- */
+	$p['gravel_bag'] = array(
+		'title'   => 'How Many Cubic Feet Is a 50 lb Bag of Gravel?',
+		'slug'    => 'how-many-cubic-feet-in-a-50-lb-bag-of-gravel',
+		'excerpt' => 'A 50 lb bag of gravel is usually 0.5 cubic feet. See how much area one bag covers, how many bags make a cubic yard or a ton, and when bulk is cheaper.',
+		'tools'   => array( 'gravel', 'paver_base' ),
+		'publish' => '2026-11-19 09:00:00',
+		'content' => <<<'HTML'
+<p class="gl-lede">Bagged gravel is labeled by weight, but you plan a project by volume. The good news: for most stone the conversion is simple. A 50 lb bag of gravel holds about half a cubic foot.</p>
+
+<h2>The short answer: about 0.5 cubic feet</h2>
+<p>Retail bags of pea gravel are commonly sold as <strong>"0.5 cu ft, 50 lb"</strong>; for example, Rocky Top pea gravel at True Value is listed at both figures. That matches the weight of the stone itself. Aggregate supplier Select Sand &amp; Gravel puts crushed stone at roughly 2,700 to 2,800 pounds per cubic yard. A cubic yard is 27 cubic feet, so a cubic foot weighs about 100 to 104 pounds, and 50 pounds is just under half a cubic foot.</p>
+<p>Lighter materials are different. Lava rock, for instance, is porous and much lighter, so a bag of the same weight holds far more volume. Always check the volume printed on the bag.</p>
+
+<h2>How much area does one bag cover?</h2>
+<p>Coverage depends on how deep you spread it. For a 0.5 cu ft bag:</p>
+<table class="gl-table">
+<thead><tr><th>Depth</th><th>One 50 lb bag covers</th><th>Bags per 100 sq ft</th></tr></thead>
+<tbody>
+<tr><td>1 inch</td><td>About 6 sq ft</td><td>17</td></tr>
+<tr><td>2 inches</td><td>About 3 sq ft</td><td>34</td></tr>
+<tr><td>3 inches</td><td>About 2 sq ft</td><td>50</td></tr>
+<tr><td>4 inches</td><td>About 1.5 sq ft</td><td>67</td></tr>
+</tbody>
+</table>
+<p>The math: square feet covered = cubic feet × 12 ÷ depth in inches. So 0.5 × 12 ÷ 2 = 3 sq ft at 2 inches.</p>
+
+<h2>Bags per cubic yard and per ton</h2>
+<ul>
+<li><strong>Per cubic yard:</strong> 27 ÷ 0.5 = <strong>54 bags</strong> of 0.5 cu ft.</li>
+<li><strong>Per ton:</strong> 2,000 ÷ 50 = <strong>40 bags</strong> of 50 lb.</li>
+</ul>
+<p>Those numbers explain why bags make sense only for small jobs. A 3-inch path 20 feet long and 3 feet wide needs 15 cubic feet, or 30 bags: about 1,500 pounds to load, carry and open. For anything over roughly a cubic yard, bulk delivery by the ton or the yard is almost always cheaper and much less work.</p>
+
+<h2>Bags or bulk?</h2>
+<ul>
+<li><strong>Bags</strong> suit small decorative areas, topping up an existing path, filling pots or post holes, and places a truck can't reach.</li>
+<li><strong>Bulk</strong> suits paths, patios, driveways and paver bases. Suppliers sell it by the ton or the cubic yard, usually in half-unit steps, and many charge a delivery fee, so compare the total.</li>
+</ul>
+<p>The <a href="/gravel-calculator/">gravel calculator</a> works out cubic yards, tons and bags for your areas and compares the cost of each option when you enter prices. Laying pavers? The <a href="/paver-base-calculator/">paver base calculator</a> adds bedding sand and digging depth.</p>
+
+<h2>Other common bag sizes</h2>
+<ul>
+<li><strong>0.75 cu ft bags:</strong> 36 per cubic yard; one covers about 4.5 sq ft at 2 inches.</li>
+<li><strong>1 cu ft bags:</strong> 27 per cubic yard; one covers about 6 sq ft at 2 inches.</li>
+</ul>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.truevalue.com/product/702983/rocky-top-0-5-cu-ft-50-lb-pea-gravel-702983/" rel="noopener" target="_blank">True Value: Rocky Top 0.5 cu ft, 50 lb pea gravel</a></li>
+<li><a href="https://selectsg.com/how-much-does-a-yard-of-crushed-stone-weigh/" rel="noopener" target="_blank">Select Sand &amp; Gravel: How much does a yard of crushed stone weigh?</a></li>
+</ul>
+HTML,
+	);
+
+	/* 15 -------------------------------------------------------------- */
+	$p['mulch_bags'] = array(
+		'title'   => 'How Many Bags of Mulch Are in a Yard?',
+		'slug'    => 'how-many-bags-of-mulch-in-a-yard',
+		'excerpt' => 'A cubic yard of mulch equals 13.5 bags of 2 cu ft (14 to buy) or 9 bags of 3 cu ft. See how much area a bag and a yard cover at 2 and 3 inches deep.',
+		'tools'   => array( 'mulch', 'compost' ),
+		'publish' => '2026-11-23 09:00:00',
+		'content' => <<<'HTML'
+<p class="gl-lede">Mulch is sold in bags at the garden center and by the cubic yard from landscape suppliers. Converting between the two is simple once you know one number: a cubic yard is 27 cubic feet.</p>
+
+<h2>The short answer</h2>
+<table class="gl-table">
+<thead><tr><th>Bag size</th><th>Bags per cubic yard</th><th>Bags to buy</th></tr></thead>
+<tbody>
+<tr><td>1.5 cu ft</td><td>18</td><td>18</td></tr>
+<tr><td>2 cu ft (most common)</td><td>13.5</td><td>14</td></tr>
+<tr><td>3 cu ft</td><td>9</td><td>9</td></tr>
+</tbody>
+</table>
+<p>Texas A&amp;M AgriLife Extension in Travis County uses the same method: multiply cubic yards by 27 to get cubic feet, then divide by the bag size. One yard in 2 cu ft bags is 27 ÷ 2 = 13.5, which rounds up to 14 bags.</p>
+
+<h2>How much area does mulch cover?</h2>
+<p>Most beds need mulch about 2 to 3 inches deep. Coverage at those depths:</p>
+<table class="gl-table">
+<thead><tr><th>Amount</th><th>At 2 inches</th><th>At 3 inches</th></tr></thead>
+<tbody>
+<tr><td>One 2 cu ft bag</td><td>12 sq ft</td><td>8 sq ft</td></tr>
+<tr><td>One 3 cu ft bag</td><td>18 sq ft</td><td>12 sq ft</td></tr>
+<tr><td>One cubic yard</td><td>162 sq ft</td><td>108 sq ft</td></tr>
+</tbody>
+</table>
+<p>The formula: square feet covered = cubic feet × 12 ÷ depth in inches.</p>
+
+<h2>Work out your own beds</h2>
+<ol>
+<li><strong>Measure each bed.</strong> Length × width for rectangles; for a tree ring, 3.14 × radius × radius.</li>
+<li><strong>Multiply by the depth in inches and divide by 12</strong> for cubic feet.</li>
+<li><strong>Divide by 27</strong> for cubic yards, or by the bag size for bags.</li>
+</ol>
+<p><strong>Example:</strong> two beds of 20 × 4 ft and a tree ring 6 ft across. The beds are 160 sq ft and the ring about 28 sq ft, 188 sq ft in all. At 3 inches: 188 × 3 ÷ 12 = 47 cubic feet. That's 24 bags of 2 cu ft, or about 1.75 cubic yards.</p>
+<p>The <a href="/mulch-calculator/">mulch calculator</a> handles every bed and tree ring at once, works out top-ups over old mulch, and compares bagged and bulk prices.</p>
+
+<h2>Bags or bulk?</h2>
+<ul>
+<li><strong>Bags</strong> are clean, easy to carry and good for a few small beds, or for colored mulch you want to match exactly.</li>
+<li><strong>Bulk</strong> is usually cheaper once you need more than a yard or two, but most suppliers charge for delivery and drop the load in one pile, so plan where it will go.</li>
+</ul>
+<p>A useful rule: price both. Divide the bag price by the bag size and multiply by 27 to get the bagged cost per yard, then compare it with the bulk price plus delivery.</p>
+
+<h2>Topping up existing mulch</h2>
+<p>You rarely need a full 3 inches every year. Measure what's left and add only enough to bring it back to 2 to 3 inches; piling fresh mulch on top of a thick old layer is one of the <a href="/mulching-mistakes/">common mulching mistakes</a>. Compost works on beds too; the <a href="/compost-calculator/">compost calculator</a> covers top-dressing depths.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://travis-tx.tamu.edu/about-2/horticulture/soils-and-composting-for-austin/how-much-compost-soil-or-mulch" rel="noopener" target="_blank">Texas A&amp;M AgriLife Extension, Travis County: How much compost, soil or mulch?</a></li>
+</ul>
+HTML,
+	);
+
+	/* 16 -------------------------------------------------------------- */
+	$p['raised_bed_fall'] = array(
+		'title'   => 'Fall Raised Bed Prep: What to Do Before Winter',
+		'slug'    => 'fall-raised-bed-prep',
+		'excerpt' => 'Get raised beds ready for winter: clear diseased plants, compost the healthy ones, top up settled soil, plant a cover crop or keep the soil covered, and plan for spring.',
+		'tools'   => array( 'raised_bed', 'compost', 'sfg' ),
+		'publish' => '2026-11-25 09:00:00',
+		'content' => <<<'HTML'
+<p class="gl-lede">A raised bed that's put to bed properly in fall is ready to plant in spring with almost no work. A few jobs now cut down on disease, weeds and soil loss, and give you a head start on next year's soil.</p>
+
+<h2>1. Clear out the season's plants</h2>
+<p>Pull spent crops once they're finished, after the first frost for warm-season crops or when cool-season ones stop producing. Illinois Extension notes that leftover plant material "can harbor disease and insects that can doom next year's crop," and University of Minnesota Extension says removing residue may help stop diseases from overwintering in the soil.</p>
+<ul>
+<li><strong>Healthy plants:</strong> chop them up and add them to the compost pile.</li>
+<li><strong>Diseased plants:</strong> keep them out of home compost. Illinois Extension recommends sending diseased material away with yard-waste pickup instead.</li>
+<li><strong>Weeds:</strong> pull them before they drop seed.</li>
+</ul>
+
+<h2>2. Decide what to do with leftover residue</h2>
+<p>University of Minnesota Extension describes three options:</p>
+<ul>
+<li><strong>Remove and compost it:</strong> a clean bed for fall greens or a cover crop. You lose some organic matter, so return finished compost to the bed later.</li>
+<li><strong>Leave it on the surface:</strong> chop it first. It breaks down slowly and protects the soil.</li>
+<li><strong>Dig it in:</strong> returns nutrients and organic matter, but repeated digging harms soil structure, and bare soil over winter can wash or blow away unless something is growing.</li>
+</ul>
+
+<h2>3. Top up settled soil</h2>
+<p>Raised beds sink as organic matter breaks down. Fall is a good time to bring them back up, because compost added now has all winter to settle in. Measure how far the soil is below the top of the frame and use the <a href="/raised-bed-soil-calculator/">raised bed soil calculator</a> or the <a href="/compost-calculator/">compost calculator</a> to work out how much you need for every bed at once.</p>
+
+<h2>4. Plant a cover crop, or keep the soil covered</h2>
+<p>Cover crops prevent erosion, hold on to nutrients and add organic matter. Two easy choices from the extension services:</p>
+<ul>
+<li><strong>Oats and peas</strong> (University of Minnesota): sown in early fall, they grow through autumn and die over winter, leaving a mulch you can plant through in spring.</li>
+<li><strong>Clover and other legumes</strong> (Illinois Extension): they add nitrogen to the soil. If they survive the winter, cut them close to the ground when they start to flower and leave the cuttings on the surface for 2 to 4 weeks before planting.</li>
+</ul>
+<p>Too late in the year for a cover crop to establish? At least keep the soil covered with a layer of chopped leaves or straw so it doesn't sit bare all winter.</p>
+
+<h2>5. Test the soil</h2>
+<p>Fall is a quiet time to send a sample to your state's soil testing lab, so you have the results before spring planting. Our guide to <a href="/how-to-read-soil-test/">reading a soil test</a> explains the report.</p>
+
+<h2>6. Clean up and plan next year</h2>
+<ul>
+<li><strong>Clean and store tools,</strong> stakes and cages.</li>
+<li><strong>Save seed only from healthy plants;</strong> University of Minnesota notes many diseases are carried on seed.</li>
+<li><strong>Write down what grew where,</strong> so you can rotate crop families next year. The <a href="/square-foot-garden-planner/">square foot garden planner</a> makes it easy to sketch a new layout.</li>
+</ul>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://extension.illinois.edu/blogs/over-garden-fence/2025-10-03-fall-veggie-garden-clean-can-yield-spring-rewards" rel="noopener" target="_blank">Illinois Extension: Fall veggie garden clean-up can yield spring rewards</a></li>
+<li><a href="https://extension.umn.edu/yard-and-garden/preparing-your-vegetable-garden-fall" rel="noopener" target="_blank">University of Minnesota Extension: Preparing your vegetable garden for fall</a></li>
+</ul>
+HTML,
+	);
+
+	/* 17 -------------------------------------------------------------- */
+	$p['winter_lawn'] = array(
+		'title'   => 'Winter Lawn Care: What to Do (and Skip) Until Spring',
+		'slug'    => 'winter-lawn-care',
+		'excerpt' => 'Protect your lawn through winter: the last mowing, clearing leaves, staying off frozen grass, using de-icing salt carefully, and what to leave until spring.',
+		'tools'   => array( 'fertilizer', 'grass_seed' ),
+		'publish' => '2026-11-30 09:00:00',
+		'content' => <<<'HTML'
+<p class="gl-lede">A dormant lawn doesn't need much in winter, but a few mistakes made now show up as dead patches in spring. Here's what's worth doing before and during winter, and what to leave alone. It's written for lawns in areas with cold winters.</p>
+
+<h2>Before winter</h2>
+<h3>Make the last mowing a short one</h3>
+<p>Keep mowing while the grass is still growing. The Chicago Botanic Garden recommends cutting the grass "quite short" for the final mowing, which helps prevent winter injury and reduces snow mold. Lower the mower gradually over the last few cuts rather than scalping it in one go, and stop once the grass has gone dormant.</p>
+
+<h3>Clear the leaves</h3>
+<p>A mat of leaves left on the lawn all winter traps moisture and can encourage mold and fungus, especially in shady spots. Rake them up, or mow over a light layer to chop it into the turf.</p>
+
+<h3>Finish feeding on schedule</h3>
+<p>Cool-season lawns get their main feeding in late summer to early fall; warm-season grass should not be fed as it goes dormant. Our <a href="/when-to-fertilize-lawn/">lawn fertilizing schedule</a> covers the timing, and the <a href="/lawn-fertilizer-calculator/">fertilizer calculator</a> works out the amount.</p>
+
+<h3>Put the equipment away properly</h3>
+<p>Drain and store hoses, shut off outdoor taps if they can freeze, and clean the mower before storing it. Our <a href="/fall-lawn-care-checklist/">fall lawn care checklist</a> has the full list.</p>
+
+<h2>During winter</h2>
+<h3>Stay off frozen grass</h3>
+<p>Frozen grass blades break easily. The Chicago Botanic Garden advises avoiding walking on frozen grass, because foot traffic breaks the blades and compacts the turf, leaving paths that show in spring. Keep regular routes on paths and paving.</p>
+
+<h3>Go easy with de-icing salt</h3>
+<p>Salt that washes or is shoveled onto the lawn can damage roots and soil. University of Minnesota Extension recommends:</p>
+<ul>
+<li><strong>Shovel first:</strong> remove as much snow as possible before ice forms, so you need less salt.</li>
+<li><strong>Use less:</strong> "More is NOT better." About 12 ounces, roughly a coffee mug, treats around 1,000 square feet.</li>
+<li><strong>Sweep up leftover grains</strong> on dry pavement so they don't end up on the grass.</li>
+<li><strong>Grow tolerant grass along walks and drives:</strong> fine fescues handle salt best, while Kentucky bluegrass does poorly in salty spots.</li>
+</ul>
+<p>Avoid piling salty snow from the driveway onto the same patch of lawn all winter.</p>
+
+<h2>What to skip until spring</h2>
+<ul>
+<li><strong>Seeding and sodding</strong> on frozen or dormant ground. Fall is best for cool-season grass; late spring for warm-season grass. See the <a href="/how-to-overseed-lawn/">overseeding guide</a> and the <a href="/grass-seed-calculator/">grass seed calculator</a> when the time comes.</li>
+<li><strong>Raking or dethatching</strong> while the grass is frozen or soggy.</li>
+<li><strong>Repairs to damaged areas:</strong> wait until the lawn greens up, then see what has recovered on its own.</li>
+</ul>
+
+<h2>Plan for spring</h2>
+<p>Winter is a good time to sharpen the mower blade, order a soil test kit and plan the year. When the snow melts, our <a href="/spring-lawn-care-checklist/">spring lawn care checklist</a> picks up where this guide leaves off.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://chicagobotanic.org/plantinfo/december_lawn_care" rel="noopener" target="_blank">Chicago Botanic Garden: December lawn care</a></li>
+<li><a href="https://extension.umn.edu/lawns-and-landscapes/effects-deicing-salts-landscapes" rel="noopener" target="_blank">University of Minnesota Extension: The effects of deicing salts on landscapes</a></li>
+</ul>
+HTML,
+	);
+
 	return $p;
 }
 
@@ -802,12 +1081,12 @@ function gl_tools_publish_overdue_guides() {
 		return;
 	}
 	set_transient( 'gl_tools_overdue_check', 1, 10 * MINUTE_IN_SECONDS );
-	$ids = array_values( (array) get_option( 'gl_tools_posts', array() ) );
+	$ids = array_merge( array_values( (array) get_option( 'gl_tools_posts', array() ) ), array_values( (array) get_option( 'gl_tools_pages', array() ) ) );
 	if ( ! $ids ) {
 		return;
 	}
 	$overdue = get_posts( array(
-		'post_type'      => 'post',
+		'post_type'      => array( 'post', 'page' ),
 		'post_status'    => 'future',
 		'post__in'       => $ids,
 		'posts_per_page' => 20,
