@@ -24,12 +24,38 @@ function gl_tools_pwa_serve() {
 			header( 'Service-Worker-Allowed: /' );
 			echo gl_tools_pwa_sw(); // phpcs:ignore WordPress.Security.EscapeOutput
 			exit;
+		case $home . '/.well-known/assetlinks.json':
+			gl_tools_pwa_headers( 'application/json' );
+			echo wp_json_encode( gl_tools_asset_links(), JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT );
+			exit;
 		case $home . '/gl-offline.html':
 			gl_tools_pwa_headers( 'text/html' );
 			header( 'X-Robots-Tag: noindex' );
 			echo gl_tools_pwa_offline_html(); // phpcs:ignore WordPress.Security.EscapeOutput
 			exit;
 	}
+}
+
+/**
+ * Digital Asset Links: proves the Android app (com.gamelylabs.app) and this site belong together,
+ * so the app opens full-screen without a browser bar. Add the Play App Signing SHA-256 from
+ * Play Console (Setup > App signing) once the app is created.
+ */
+function gl_tools_asset_links() {
+	$fingerprints = array(
+		// Upload key (AJ Tech Studio), used for test builds.
+		'DB:58:4E:A8:BB:1B:7E:EE:7E:BB:CC:28:0B:31:B9:98:80:0D:13:EF:B7:18:3C:42:2A:78:51:51:D1:7C:4D:7A',
+	);
+	return array(
+		array(
+			'relation' => array( 'delegate_permission/common.handle_all_urls' ),
+			'target'   => array(
+				'namespace'                => 'android_app',
+				'package_name'             => 'com.gamelylabs.app',
+				'sha256_cert_fingerprints' => $fingerprints,
+			),
+		),
+	);
 }
 
 function gl_tools_pwa_headers( $type ) {
