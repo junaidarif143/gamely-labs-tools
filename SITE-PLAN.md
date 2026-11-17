@@ -45,3 +45,4 @@ Started: **Thursday, October 22, 2026**
   - Nov 30: Winter lawn care
   - Dec 3: Concrete Calculator (tool #13: slabs and post holes, 40/60/80 lb bags, ready-mix comparison)
 - 2026-11-16: v1.13.1: privacy policy covers the Android app (same data practices as the site; offline copies). Play Store listing text, icon, feature graphic and 6 screenshots prepared in the gamely-app folder.
+- 2026-11-17: Android app: private repo junaidarif143/gamely-labs-app (Bubblewrap TWA, CI builds unsigned AAB to 'builds' branch). Package com.gamelylabs.app, v1.0.0 (1), targetSdk 36, minSdk 24. Signed locally with the upload key (kept outside GitHub, given to the user). v1.13.2 serves /.well-known/assetlinks.json (upload key fingerprint; add the Play App Signing fingerprint after app creation).
