@@ -45,6 +45,8 @@ function gl_tools_asset_links() {
 	$fingerprints = array(
 		// Upload key (AJ Tech Studio), used for test builds.
 		'DB:58:4E:A8:BB:1B:7E:EE:7E:BB:CC:28:0B:31:B9:98:80:0D:13:EF:B7:18:3C:42:2A:78:51:51:D1:7C:4D:7A',
+		// Google Play App Signing key (builds installed from Google Play).
+		'2F:69:9E:63:C0:45:49:EF:AB:A8:00:2A:A7:17:46:06:1B:07:52:CA:4E:AF:E4:11:C9:50:CD:E0:80:38:2F:F6',
 	);
 	return array(
 		array(
