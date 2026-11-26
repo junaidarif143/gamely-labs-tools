@@ -11,11 +11,11 @@ defined( 'ABSPATH' ) || exit;
 define( 'GL_TOOLS_ADSENSE_PUB', 'pub-3391763778564662' );
 
 /**
- * Which ad network runs the site: 'adsense' (default) or 'ezoic'.
+ * Which ad network runs the site: 'ezoic' (default) or 'adsense'.
  * Switch with the option gl_ad_provider; no code change needed to go back.
  */
 function gl_tools_ad_provider() {
-	return 'ezoic' === get_option( 'gl_ad_provider', 'adsense' ) ? 'ezoic' : 'adsense';
+	return 'adsense' === get_option( 'gl_ad_provider', 'ezoic' ) ? 'adsense' : 'ezoic';
 }
 
 /** Ezoic ads.txt manager (Ezoic's shared ID 19390 + our domain). */
