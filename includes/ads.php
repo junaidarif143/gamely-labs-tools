@@ -62,6 +62,7 @@ function gl_tools_adsense_head() {
 	}
 	$client = 'ca-' . GL_TOOLS_ADSENSE_PUB;
 	echo '<meta name="google-adsense-account" content="' . esc_attr( $client ) . '">' . "\n";
+	echo '<meta name="ezoic-site-verification" content="PBqMhe9U8VfxMw3Y0c2X1FMi547FXV" />' . "\n";
 	if ( 'ezoic' === gl_tools_ad_provider() ) {
 		return; // Ezoic serves Google demand itself; AdSense Auto ads would clash.
 	}
