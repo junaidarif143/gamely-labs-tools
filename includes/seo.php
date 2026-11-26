@@ -101,6 +101,15 @@ add_action( 'template_redirect', function () {
 	}
 } );
 
+// Date, tag and paged archives only repeat posts that have their own pages: keep them out of search.
+add_filter( 'wp_robots', function ( $robots ) {
+	if ( is_date() || is_tag() || ( is_category() && is_paged() ) || is_attachment() ) {
+		$robots['noindex'] = true;
+		$robots['follow']  = true;
+	}
+	return $robots;
+} );
+
 // Hide user records from the public REST API listing (they expose login slugs).
 add_filter( 'rest_endpoints', function ( $endpoints ) {
 	if ( ! is_user_logged_in() ) {

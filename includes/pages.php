@@ -1115,7 +1115,7 @@ HTML;
 	 * ------------------------------------------------------------- */
 	$privacy = <<<'HTML'
 <p class="gl-lede">This policy explains what information Gamely Labs collects when you use gamelylabs.com or the Gamely Labs app, how it is used, and the choices you have.</p>
-<p><strong>Effective date:</strong> October 22, 2026. <strong>Last updated:</strong> November 16, 2026.</p>
+<p><strong>Effective date:</strong> October 22, 2026. <strong>Last updated:</strong> November 26, 2026.</p>
 
 <h2>Who we are</h2>
 <p>Gamely Labs (gamelylabs.com) is owned and operated by AJ Tech Studio. In this policy, "we", "us" and "our" refer to Gamely Labs and AJ Tech Studio. You can contact us at <a href="mailto:info@ajtechstudio.com">info@ajtechstudio.com</a>.</p>
@@ -1135,7 +1135,7 @@ HTML;
 <p>If you email us, we receive your email address and whatever you choose to include in your message. We use it only to reply to you and to improve the site, and we don't sell it or add you to mailing lists.</p>
 
 <h2>Cookies and advertising</h2>
-<p>We use, or may use, Google AdSense to show advertising on this site. Advertising helps keep our calculators free.</p>
+<p>Advertising helps keep our calculators free. Ads on this site are served by <strong>Ezoic Inc.</strong> and its partners, including Google, and we may also use Google AdSense directly.</p>
 <ul>
 <li>Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to this website or other websites.</li>
 <li>Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to this site and/or other sites on the internet.</li>
@@ -1145,11 +1145,15 @@ HTML;
 <p>Visitors in the European Economic Area, the United Kingdom and Switzerland will be asked for consent before personalized ads or advertising cookies are used, and can change their choice at any time.</p>
 <p>Most browsers let you block or delete cookies through their settings. Blocking cookies won't stop our calculators from working.</p>
 
+<h2>Ezoic</h2>
+<p>This site uses Ezoic to run and measure its advertising. Ezoic and its partners may use cookies and similar technologies, and collect information such as your IP address, device and browser details and the pages you view, to serve and personalize ads, measure their performance and prevent fraud. Where the law requires it, a consent message from Ezoic lets you accept or refuse these uses. The details of the partners Ezoic works with and the data they process are listed below and at <a href="https://www.ezoic.com/privacy-policy/" rel="noopener" target="_blank">Ezoic's privacy policy</a>.</p>
+<span id="ezoic-privacy-policy-embed"></span>
+
 <h2>Analytics</h2>
-<p>We do not currently use a separate analytics service. If we add one in the future, we will update this policy to describe it before it is used.</p>
+<p>Ezoic's analytics measure how pages are used, such as how many people visit and how long they stay, so we can see which calculators and guides are useful. We do not use any other analytics service.</p>
 
 <h2>How we share information</h2>
-<p>We don't sell your personal information. Information is shared only with the service providers that run the site, namely our web host and, where ads are shown, Google and its advertising partners as described above, or when required by law.</p>
+<p>We don't sell your personal information. Information is shared only with the service providers that run the site, namely our web host and, where ads are shown, Ezoic, Google and their advertising partners as described above, or when required by law.</p>
 
 <h2>Your rights</h2>
 <p>Depending on where you live, including under the GDPR in Europe and the CCPA in California, you may have the right to access, correct or delete personal information we hold about you, to object to or restrict certain processing, and to opt out of personalized advertising. To make a request, email <a href="mailto:info@ajtechstudio.com">info@ajtechstudio.com</a>. We will respond within the time required by applicable law.</p>

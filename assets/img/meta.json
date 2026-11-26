@@ -148,5 +148,30 @@
   "title": "Slab volume to bags",
   "alt": "Cross-section of a 4 inch concrete patio slab over 4 inches of compacted gravel, with the formula: a 10 by 12 foot patio at 4 inches is 40 cubic feet, 44 with 10 percent extra, which is 1.63 cubic yards or 74 bags of 80 pounds.",
   "caption": "A 10 × 12 ft patio poured 4 in thick is 40 cu ft; with 10% extra that's 44 cu ft (1.63 cu yd), or 74 bags of 80 lb at about 0.60 cu ft per bag."
+ },
+ "when-to-lime-lawn": {
+  "title": "When to lime your lawn",
+  "alt": "Calendar from September to May showing fall as the best time to lime an established lawn, winter as good and early spring as acceptable; target pH about 6.5; apply no more than 150 pounds per 1,000 square feet at once.",
+  "caption": "Fall is the best time to lime, then winter, then early spring. Aim for a pH around 6.5 and apply no more than 150 lb per 1,000 sq ft at once."
+ },
+ "how-to-set-fence-posts-in-concrete": {
+  "title": "Setting a fence post in concrete",
+  "alt": "Cross-section of a fence post hole: 6 inches of gravel at the bottom, concrete around the post, and 3 to 4 inches of soil on top. A 4x4 post in a 10-inch by 30-inch hole needs about 0.81 cubic feet of concrete.",
+  "caption": "Dig the hole 3 times the post width, bury ⅓ to ½ of the above-ground height plus 6 in of gravel, and stop the concrete 3–4 in below the surface."
+ },
+ "how-deep-should-a-raised-bed-be": {
+  "title": "How much soil each bed depth takes",
+  "alt": "Four raised beds of increasing depth: a 4 by 8 foot bed needs 16 cubic feet of soil at 6 inches, 21.3 at 8 inches, 26.7 at 10 inches and 32 at 12 inches.",
+  "caption": "Soil for one 4 × 8 ft bed: 16 cu ft at 6 in, 21.3 at 8 in, 26.7 at 10 in and 32 at 12 in deep."
+ },
+ "square-foot-gardening-spacing-chart": {
+  "title": "Plants per square foot",
+  "alt": "Four one-foot squares planted with 1 tomato, 4 lettuce, 9 beets and 16 carrots in even grids.",
+  "caption": "Each 12 × 12 in square holds 1, 4, 9 or 16 plants depending on the crop: 1 tomato, 4 lettuce, 9 beets or 16 carrots."
+ },
+ "topdressing-lawn-with-compost": {
+  "title": "Topdressing a lawn with compost",
+  "alt": "Cross-section of a lawn with a thin layer of compost, no more than half an inch, between the grass blades. Per 1,000 square feet, a quarter inch is 20.8 cubic feet and half an inch is 41.7 cubic feet.",
+  "caption": "Spread no more than ½ in of compost at a time. Per 1,000 sq ft, ¼ in is about 0.77 cu yd and ½ in about 1.54 cu yd."
  }
 }

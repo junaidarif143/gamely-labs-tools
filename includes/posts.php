@@ -990,6 +990,319 @@ HTML,
 HTML,
 	);
 
+	/* 18 -------------------------------------------------------------- */
+	$p['when_lime'] = array(
+		'title'   => 'When to Lime Your Lawn (and How Much Is Too Much)',
+		'slug'    => 'when-to-lime-lawn',
+		'excerpt' => 'The best time to lime a lawn is fall. Learn why, how to read a soil test recommendation, the most you should apply at once, and how long lime takes to work.',
+		'tools'   => array( 'lime', 'fertilizer' ),
+		'publish' => '2026-12-02 09:00:00',
+		'content' => <<<'HTML'
+<p class="gl-lede">Lime raises the pH of acidic soil, which helps grass take up nutrients. It's one of the cheapest lawn treatments there is, but only if your soil actually needs it, and it works slowly, so timing matters.</p>
+
+<h2>The short answer</h2>
+<ul>
+<li><strong>Test first.</strong> Only lime when a soil test says your pH is too low, and use the amount the test recommends.</li>
+<li><strong>Fall is best.</strong> Then winter, then early spring.</li>
+<li><strong>Don't overdo it.</strong> West Virginia University Extension advises against single applications of more than 150 pounds per 1,000 square feet.</li>
+<li><strong>Expect it to be slow.</strong> Lime can take months to years to change the pH where roots grow.</li>
+</ul>
+
+<h2>Why fall is the best time</h2>
+<p>Mississippi State University Extension calls fall "a great time" to lime because the lime has the moist winter months to react with the soil before grass starts growing again. Fall soils are also usually drier and firmer, so spreading is easier and you compact the lawn less.</p>
+<p>West Virginia University Extension ranks the timing for established lawns as fall, winter, or early spring, "in that order", and adds that you shouldn't lime when the soil is too wet to spread it evenly. If you're seeding a new lawn, lime when you prepare the soil, so you can work it into the root zone before planting.</p>
+
+<h2>Do you need lime at all?</h2>
+<p>Most lawn grasses grow best at a pH of around 6.5, according to WVU Extension. Below about 6, grass struggles to use the fertilizer you give it. Above 7, adding lime makes things worse, not better.</p>
+<p>You can't tell pH by looking at a lawn. Moss, thin grass or yellowing can come from shade, compaction or poor drainage just as easily. A soil test from your state's extension lab costs little (Mississippi State's lab charges $8) and tells you two things: your pH and, if it's low, how much lime to apply in pounds per 1,000 square feet. Our guide to <a href="/how-to-read-soil-test/">reading a soil test</a> explains the report.</p>
+
+<h2>How much lime: an example</h2>
+<p>Say your soil test recommends 100 pounds of lime per 1,000 square feet and your lawn is 5,000 square feet.</p>
+<ul>
+<li>Total lime: 5,000 ÷ 1,000 × 100 = <strong>500 pounds</strong></li>
+<li>In 40 lb bags: 500 ÷ 40 = 12.5, so <strong>13 bags</strong></li>
+<li>In 50 lb bags: 500 ÷ 50 = <strong>10 bags</strong></li>
+</ul>
+<p>The <a href="/lawn-lime-calculator/">lawn lime calculator</a> does this for any area and also converts recommendations given in pounds or tons per acre.</p>
+
+<h2>The most to apply at once</h2>
+<table class="gl-table">
+<thead><tr><th>Soil test recommends</th><th>What to do</th></tr></thead>
+<tbody>
+<tr><td>Up to 150 lb per 1,000 sq ft</td><td>Apply it in one go, ideally in fall</td></tr>
+<tr><td>More than 150 lb per 1,000 sq ft</td><td>Apply half now, retest, and apply the rest later</td></tr>
+</tbody>
+</table>
+<p>WVU Extension says single applications above 150 pounds per 1,000 square feet (3 tons per acre) aren't recommended. For larger amounts it suggests applying half, then the rest two to three years later after rechecking the pH. Many gardeners split even smaller amounts between fall and spring, which is easier on the spreader and on you.</p>
+
+<h2>How long does lime take to work?</h2>
+<p>Longer than most people expect. Lime moves down through soil very slowly; WVU Extension notes it "may take up to two years per 2 inches" when it's spread on the surface. That's why you won't see a quick change on an established lawn, and why tilling it in before seeding a new lawn works faster.</p>
+<p>Because of that, there's no point testing again a few weeks after liming. Retest in the same season a year or more later. WVU Extension says lime is generally needed only every three to five years, and Mississippi State notes that pH tends to drift back down over time, so periodic tests keep you on track.</p>
+
+<h2>Tips for spreading lime</h2>
+<ol>
+<li><strong>Use a spreader,</strong> not your hands. Pelletized lime is ground limestone pressed into pellets, so it flows through a normal broadcast or drop spreader with less dust.</li>
+<li><strong>Go over the lawn twice</strong> at half the rate, the second pass at right angles to the first, so you don't get stripes.</li>
+<li><strong>Water lightly afterwards</strong> to wash the lime off the grass blades.</li>
+<li><strong>Fertilize on your usual schedule.</strong> Lime isn't a fertilizer; follow your soil test and each product's label. Our <a href="/when-to-fertilize-lawn/">fertilizer schedule</a> covers when to feed.</li>
+</ol>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://extension.msstate.edu/blog/it-time-lime-your-landscape" rel="noopener" target="_blank">Mississippi State University Extension: Is it time to lime your landscape?</a></li>
+<li><a href="https://extension.wvu.edu/files/d/2a7a64ae-a88d-45f7-80e7-048ddd3252b2/lawn-liming.pdf" rel="noopener" target="_blank">West Virginia University Extension: Lawn Liming</a></li>
+</ul>
+HTML,
+	);
+
+	/* 19 -------------------------------------------------------------- */
+	$p['fence_posts'] = array(
+		'title'   => 'How to Set Fence Posts in Concrete: Hole Size, Depth and Bags per Post',
+		'slug'    => 'how-to-set-fence-posts-in-concrete',
+		'excerpt' => 'How deep and wide to dig a fence post hole, how much gravel goes underneath, and how many 40, 60 or 80 lb bags of concrete each post needs, with worked examples.',
+		'tools'   => array( 'concrete', 'gravel' ),
+		'publish' => '2026-12-05 09:00:00',
+		'content' => <<<'HTML'
+<p class="gl-lede">A fence is only as straight as its posts. Get the hole size right and you'll use the right amount of concrete, the post won't lean, and water will drain away from the wood instead of rotting it.</p>
+
+<h2>The rules of thumb</h2>
+<table class="gl-table">
+<thead><tr><th>What</th><th>Rule</th><th>For a 4×4 post, 6 ft above ground</th></tr></thead>
+<tbody>
+<tr><td>Hole width</td><td>3 × the post's width</td><td>About 10 to 12 inches</td></tr>
+<tr><td>Post in the ground</td><td>⅓ to ½ of the height above ground</td><td>24 to 36 inches</td></tr>
+<tr><td>Gravel under the post</td><td>About 6 inches, compacted</td><td>6 inches</td></tr>
+<tr><td>Total hole depth</td><td>Buried depth + 6 inches of gravel</td><td>30 to 42 inches</td></tr>
+<tr><td>Concrete stops</td><td>3 to 4 inches below the surface</td><td>Top it with soil</td></tr>
+</tbody>
+</table>
+<p>These follow QUIKRETE's instructions for setting posts: a hole three times the width of the post, dug to a depth equal to one-third to one-half of the post's above-ground length plus 6 inches for a layer of compacted gravel. Check local building codes too. In cold climates, posts often need to go below the frost line, which can be deeper than the rule of thumb.</p>
+
+<h2>Step by step</h2>
+<ol>
+<li><strong>Mark and call before you dig.</strong> In the US, call 811 a few days ahead so buried utility lines are marked for free.</li>
+<li><strong>Dig the hole</strong> with a post-hole digger or auger, keeping the sides straight.</li>
+<li><strong>Add about 6 inches of gravel</strong> and tamp it down. It lets water drain away from the end of the post.</li>
+<li><strong>Set the post</strong> on the gravel, plumb it on two adjacent faces with a level, and brace it with stakes.</li>
+<li><strong>Fill with concrete</strong> to 3 to 4 inches below ground level. With fast-setting mix you pour the dry mix into the hole and add the water the bag specifies; with standard mix you mix it first.</li>
+<li><strong>Let it set</strong> before you hang rails or boards, then fill the top few inches with soil, or slope the concrete away from the post so water runs off.</li>
+</ol>
+<p>HGTV contributor Derek Trimble notes that fast-setting concrete typically hardens in 20 to 60 minutes depending on temperature, and suggests pouring when it's between 50 and 90°F. Always follow the timing on your bag.</p>
+
+<h2>How many bags of concrete per post?</h2>
+<p>The concrete fills a ring: the hole minus the post, from the top of the gravel to 3 inches below the surface. For a 4×4 post (actually 3½ inches square) in a 30-inch hole with 6 inches of gravel, the concrete column is 21 inches tall.</p>
+<table class="gl-table">
+<thead><tr><th>Hole diameter</th><th>Concrete</th><th>80 lb bags</th><th>60 lb bags</th><th>40 lb bags</th></tr></thead>
+<tbody>
+<tr><td>10 inches</td><td>0.81 cu ft</td><td>2 (1.3)</td><td>2 (1.8)</td><td>3 (2.7)</td></tr>
+<tr><td>12 inches</td><td>1.23 cu ft</td><td>3 (2.0)</td><td>3 (2.7)</td><td>5 (4.1)</td></tr>
+</tbody>
+</table>
+<p>The figures in brackets are the exact amounts, using typical yields of about 0.60, 0.45 and 0.30 cubic feet for 80, 60 and 40 lb bags of standard concrete mix. Fast-setting mixes yield a little differently, so check the bag. Notice how much the hole width matters: two inches wider needs about 50% more concrete.</p>
+<p>The math, if you want to check it: hole area = 3.14 × radius², minus the post's area, times the height of the concrete, divided by 1,728 to turn cubic inches into cubic feet. The <a href="/concrete-calculator/">concrete calculator</a> has a fence-post mode that does this for any post size, hole and number of posts, subtracts the gravel layer, and compares bag and ready-mix costs.</p>
+
+<h2>Common mistakes</h2>
+<ul>
+<li><strong>Skipping the gravel.</strong> A post sitting in a cup of concrete holds water against the end grain, which speeds up rot.</li>
+<li><strong>Mounding concrete above ground</strong> without sloping it away from the post, so water pools against the wood.</li>
+<li><strong>Holes that are too narrow</strong> to get concrete all around the post, or so wide that you buy twice the concrete you need.</li>
+<li><strong>Hanging the fence too soon.</strong> Give the concrete the time the bag says before putting weight on the posts.</li>
+<li><strong>Forgetting extra posts.</strong> Gate posts carry more load; many builders use a bigger post and a deeper, wider hole for them.</li>
+</ul>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.quikrete.com/settingposts/" rel="noopener" target="_blank">QUIKRETE: Setting Posts in Concrete</a></li>
+<li><a href="https://www.hgtv.com/gardening/landscaping-and-hardscaping/how-deep-should-dig-fence-posts" rel="noopener" target="_blank">HGTV: How Deep Should I Dig Fence Posts?</a></li>
+</ul>
+HTML,
+	);
+
+	/* 20 -------------------------------------------------------------- */
+	$p['raised_bed_depth'] = array(
+		'title'   => 'How Deep Should a Raised Bed Be? Depth, Width and Soil Needed',
+		'slug'    => 'how-deep-should-a-raised-bed-be',
+		'excerpt' => 'Most vegetables grow well in 6 to 12 inches of raised bed soil. See the ideal width and length, how much soil each depth takes, and how to prepare the ground underneath.',
+		'tools'   => array( 'raised_bed', 'sfg', 'compost' ),
+		'publish' => '2026-12-09 09:00:00',
+		'content' => <<<'HTML'
+<p class="gl-lede">Deeper isn't always better with raised beds. Every extra inch costs soil and money, and for most vegetables 6 to 12 inches of good soil, sitting on loosened ground, is plenty.</p>
+
+<h2>The short answer</h2>
+<ul>
+<li><strong>Soil depth:</strong> 6 to 12 inches for most vegetables and flowers.</li>
+<li><strong>Width:</strong> 3 to 4 feet, so you can reach the middle without stepping on the soil.</li>
+<li><strong>Length:</strong> 4 to 12 feet suits most home gardens.</li>
+</ul>
+<p>These are the guidelines in Alabama Cooperative Extension System's raised bed guide, which says 6 to 12 inches of soil gives "adequate root development to produce healthy plants" and prefers a 4-foot width because you can reach the center from either side.</p>
+
+<h2>Why 6 to 12 inches is enough</h2>
+<p>A raised bed usually sits on open ground, so roots don't stop at the bottom of the frame. If you loosen the soil underneath before filling, roots carry on down into it. Alabama Extension recommends spading or tilling the native soil 6 to 8 inches deep while it's moist, leaving the surface rough, and blending about 2 inches of the new mix into it so there's no abrupt layer between the two soils.</p>
+<p>That means a 6-inch bed on well-prepared ground behaves like a much deeper one. Go deeper when:</p>
+<ul>
+<li>the ground underneath is poor, compacted or rocky and you can't dig it;</li>
+<li>the bed sits on a patio or hard surface;</li>
+<li>you want long carrots, parsnips or potatoes; or</li>
+<li>you'd like to garden with less bending. Alabama Extension notes beds can rise anywhere from 6 inches to waist-high, but deeper beds need more soil and must still drain.</li>
+</ul>
+
+<h2>How much soil each depth takes</h2>
+<p>For a typical 4 × 8 foot bed:</p>
+<table class="gl-table">
+<thead><tr><th>Soil depth</th><th>Cubic feet</th><th>Cubic yards</th><th>2 cu ft bags</th><th>1.5 cu ft bags</th></tr></thead>
+<tbody>
+<tr><td>6 inches</td><td>16</td><td>0.59</td><td>8</td><td>11</td></tr>
+<tr><td>8 inches</td><td>21.3</td><td>0.79</td><td>11</td><td>15</td></tr>
+<tr><td>10 inches</td><td>26.7</td><td>0.99</td><td>14</td><td>18</td></tr>
+<tr><td>12 inches</td><td>32</td><td>1.19</td><td>16</td><td>22</td></tr>
+</tbody>
+</table>
+<p>The formula is length × width × depth in inches ÷ 12. Doubling the depth doubles the soil, which is why going from 6 to 12 inches turns 8 bags into 16. Above about a cubic yard, bulk soil delivered by the yard is usually cheaper than bags. The <a href="/raised-bed-soil-calculator/">raised bed soil calculator</a> handles several beds at once, splits the total into your recipe and compares bagged and bulk prices.</p>
+
+<h2>Plan for settling</h2>
+<p>New soil sinks. The compost and other organic matter in a good mix keep breaking down, and Alabama Extension says to expect to replace 1 or 2 inches of the mix every year. Fill new beds to the top, or slightly above, and top them up each spring or fall with compost. Our guide to <a href="/fall-raised-bed-prep/">fall raised bed prep</a> covers the yearly routine.</p>
+
+<h2>What to fill it with</h2>
+<p>Alabama Extension recommends a mix of good topsoil and plenty of organic matter, such as compost, pine bark or peat. Premixed raised bed soils usually already contain lime and fertilizer, so check the bag before adding more. For three popular recipes and how they compare, see <a href="/raised-bed-soil-mixes/">raised bed soil mixes</a>.</p>
+
+<h2>Width matters as much as depth</h2>
+<p>Never step on the soil in a raised bed; that's what keeps it loose. A 4-foot bed you can reach from both sides is the most efficient. Against a fence or wall, where you can only reach from one side, keep it to about 3 feet. If you plant in a grid, the <a href="/square-foot-garden-planner/">square foot garden planner</a> lays out a 4-foot bed square by square.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.aces.edu/blog/topics/lawn-garden/raised-bed-gardening/" rel="noopener" target="_blank">Alabama Cooperative Extension System: Raised Bed Gardening</a></li>
+</ul>
+HTML,
+	);
+
+	/* 21 -------------------------------------------------------------- */
+	$p['sfg_spacing'] = array(
+		'title'   => 'Square Foot Gardening Spacing Chart: How Many Plants per Square',
+		'slug'    => 'square-foot-gardening-spacing-chart',
+		'excerpt' => 'How many plants fit in one square foot: 16 carrots, 9 beets, 4 lettuce, 1 tomato and more. A spacing chart for common vegetables, plus a sample 4×4 bed plan.',
+		'tools'   => array( 'sfg', 'raised_bed' ),
+		'publish' => '2026-12-12 09:00:00',
+		'content' => <<<'HTML'
+<p class="gl-lede">Square foot gardening divides a bed into 1-foot squares and plants each square with 1, 2, 4, 8, 9 or 16 plants, depending on the crop's size. Once you know a crop's number, planning a bed takes minutes.</p>
+
+<h2>The spacing chart</h2>
+<table class="gl-table">
+<thead><tr><th>Plants per square</th><th>Spacing</th><th>Crops</th></tr></thead>
+<tbody>
+<tr><td><strong>16</strong></td><td>3 inches</td><td>Carrots, radishes, green onions, chives</td></tr>
+<tr><td><strong>9</strong></td><td>4 inches</td><td>Bush beans, spinach, beets, turnips, kohlrabi, leeks, onions, garlic, scallions</td></tr>
+<tr><td><strong>8</strong></td><td>3 inches, on a trellis</td><td>Peas, pole beans</td></tr>
+<tr><td><strong>4</strong></td><td>6 inches</td><td>Leaf lettuce, Swiss chard, corn, parsley, parsnips</td></tr>
+<tr><td><strong>2</strong></td><td>8 inches</td><td>Cucumbers on a trellis, sweet potatoes, kale</td></tr>
+<tr><td><strong>1</strong></td><td>12 inches</td><td>Tomatoes, peppers, eggplant, potatoes, broccoli, cabbage, cauliflower, celery, okra, sunflowers</td></tr>
+<tr><td><strong>1 per 2 squares</strong></td><td>18 to 24 inches</td><td>Summer squash, zucchini, winter squash, pumpkins, melons</td></tr>
+</tbody>
+</table>
+<p>This chart is from North Carolina State Extension's square foot gardening handout. Spacing charts differ a little between sources. Our planner, for example, gives kale a whole square and summer squash four squares, the roomier end of the range, because those plants get big. If a crop is new to you, start with the roomier spacing.</p>
+
+<h2>How to plant a square</h2>
+<p>Picture each square as a grid. For 4 per square, plant in a 2 × 2 grid about 6 inches apart; for 9, a 3 × 3 grid about 4 inches apart; for 16, a 4 × 4 grid about 3 inches apart. NC State's handout suggests a neat trick for small seeds: glue seeds onto a 12 × 12 inch paper towel in the right pattern, then lay the towel on the soil and cover it.</p>
+
+<h2>A sample 4 × 4 bed</h2>
+<p>A 4 × 4 foot bed has 16 squares. One easy summer plan:</p>
+<table class="gl-table">
+<tbody>
+<tr><td>Tomato (1)</td><td>Tomato (1)</td><td>Pepper (1)</td><td>Pepper (1)</td></tr>
+<tr><td>Swiss chard (4)</td><td>Lettuce (4)</td><td>Lettuce (4)</td><td>Parsley (4)</td></tr>
+<tr><td>Bush beans (9)</td><td>Bush beans (9)</td><td>Beets (9)</td><td>Onions (9)</td></tr>
+<tr><td>Carrots (16)</td><td>Carrots (16)</td><td>Radishes (16)</td><td>Spinach (9)</td></tr>
+</tbody>
+</table>
+<p>That's 113 plants in 16 square feet. Put tall crops such as tomatoes on the north side of the bed so they don't shade the rest. When a square is harvested, replant it with something else; radishes and lettuce are often followed by another sowing a few weeks later.</p>
+<p>The <a href="/square-foot-garden-planner/">square foot garden planner</a> lets you click squares to plant them, then totals the plants and seeds you need and works out the soil for the bed.</p>
+
+<h2>What size bed?</h2>
+<p>Square foot beds are usually 4 feet wide, so you can reach the middle from either side, and at least 6 inches deep. See <a href="/how-deep-should-a-raised-bed-be/">how deep a raised bed should be</a> and use the <a href="/raised-bed-soil-calculator/">raised bed soil calculator</a> to work out how much mix to buy.</p>
+
+<h2>Common mistakes</h2>
+<ul>
+<li><strong>Squeezing in extra plants.</strong> Crowded plants compete for light and water and yield less.</li>
+<li><strong>Planting a whole bed of one crop at once.</strong> Sow a square or two every couple of weeks so the harvest doesn't arrive all together.</li>
+<li><strong>Forgetting trellises.</strong> Cucumbers, peas and pole beans only fit their squares if they grow up, not out.</li>
+<li><strong>Letting the soil sink.</strong> Top up beds with compost each season; the <a href="/compost-calculator/">compost calculator</a> works out how much.</li>
+</ul>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://growforit.ces.ncsu.edu/wp-content/uploads/2021/03/Square-Foot-Gardening.pdf?fwd=no" rel="noopener" target="_blank">NC State Extension: Square Foot Gardening</a></li>
+</ul>
+HTML,
+	);
+
+	/* 22 -------------------------------------------------------------- */
+	$p['topdress_compost'] = array(
+		'title'   => 'Topdressing a Lawn with Compost: How Much and When',
+		'slug'    => 'topdressing-lawn-with-compost',
+		'excerpt' => 'Topdress your lawn with no more than ½ inch of compost at a time, during the growing season, ideally after core aeration. Here is how much to buy for your lawn.',
+		'tools'   => array( 'compost', 'topsoil' ),
+		'publish' => '2026-12-16 09:00:00',
+		'content' => <<<'HTML'
+<p class="gl-lede">Topdressing means spreading a thin layer of material, usually compost, over an established lawn. Done lightly and regularly, it builds better soil under the grass and smooths out small dips, without digging anything up.</p>
+
+<h2>The short answer</h2>
+<ul>
+<li><strong>Use compost</strong> for most home lawns.</li>
+<li><strong>Spread no more than ½ inch at a time;</strong> ¼ inch is a common, easier choice.</li>
+<li><strong>Do it while the grass is actively growing,</strong> ideally right after core aeration.</li>
+<li><strong>Rake it in</strong> so it settles between the grass blades.</li>
+</ul>
+<p>Clemson Cooperative Extension's Home & Garden Information Center recommends applying "no more than ½-inch of material" at a time, because thicker layers can shade the grass and stunt its growth, and favors light, frequent applications.</p>
+
+<h2>Which material?</h2>
+<table class="gl-table">
+<thead><tr><th>Material</th><th>When to use it</th></tr></thead>
+<tbody>
+<tr><td>Compost</td><td>The best choice for most home lawns, on any soil type</td></tr>
+<tr><td>Topsoil</td><td>Filling low spots on soil that isn't sandy; pick a topsoil similar to your own</td></tr>
+<tr><td>Sand</td><td>Only where the native soil is already sandy</td></tr>
+</tbody>
+</table>
+<p>This is Clemson's guidance. Matching the material to your soil matters: a layer of sand over clay, for example, creates layers that water moves through poorly. Use screened compost with no large lumps, so it falls between the blades instead of smothering them.</p>
+
+<h2>How much compost do you need?</h2>
+<p>Volume is area × depth. A quarter inch sounds like nothing, but over a whole lawn it adds up:</p>
+<table class="gl-table">
+<thead><tr><th>Lawn area</th><th>¼ inch</th><th>½ inch</th></tr></thead>
+<tbody>
+<tr><td>1,000 sq ft</td><td>20.8 cu ft (0.77 cu yd)</td><td>41.7 cu ft (1.54 cu yd)</td></tr>
+<tr><td>2,500 sq ft</td><td>52 cu ft (1.9 cu yd)</td><td>104 cu ft (3.9 cu yd)</td></tr>
+<tr><td>5,000 sq ft</td><td>104 cu ft (3.9 cu yd)</td><td>208 cu ft (7.7 cu yd)</td></tr>
+</tbody>
+</table>
+<p>The formula: square feet × depth in inches ÷ 12 = cubic feet, then ÷ 27 for cubic yards. For anything bigger than a small lawn, bulk compost by the yard is far cheaper than bags; a 5,000 sq ft lawn at ¼ inch would take about 104 one-cubic-foot bags. The <a href="/compost-calculator/">compost calculator</a> works out yards and bags for any area and depth, and compares bagged and bulk prices.</p>
+
+<h2>How to topdress, step by step</h2>
+<ol>
+<li><strong>Mow</strong> a little shorter than usual, so the compost reaches the soil.</li>
+<li><strong>Core aerate</strong> if you can. Clemson notes organic matter can go down right after aeration, when it can fall into the holes.</li>
+<li><strong>Drop small piles</strong> of compost across the lawn from a wheelbarrow, spaced evenly.</li>
+<li><strong>Spread them thinly</strong> with the back of a rake or a level lawn rake, working it down between the blades. You should still see grass through the compost.</li>
+<li><strong>Water lightly</strong> to settle it.</li>
+<li><strong>Overseed now</strong> if the lawn is thin. Compost makes a good seedbed; see <a href="/how-to-overseed-lawn/">how to overseed a lawn</a>.</li>
+</ol>
+
+<h2>Filling low spots</h2>
+<p>Topdressing smooths shallow dips over time, but the ½-inch limit still applies to each pass. For a hollow deeper than that, spread up to ½ inch, let the grass grow up through it, and repeat. For bigger levelling jobs, see <a href="/how-to-level-bumpy-lawn/">how to level a bumpy lawn</a> and the <a href="/topsoil-calculator/">topsoil calculator</a>, which plans fill in safe layers.</p>
+
+<h2>When not to topdress</h2>
+<ul>
+<li>When the lawn is dormant, so the grass can't grow through the layer.</li>
+<li>In heat or drought stress.</li>
+<li>When the ground is frozen or waterlogged.</li>
+</ul>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://hgic.clemson.edu/factsheet/topdressing-a-home-lawn/" rel="noopener" target="_blank">Clemson Cooperative Extension HGIC: Topdressing a Home Lawn</a></li>
+</ul>
+HTML,
+	);
+
 	return $p;
 }
 
